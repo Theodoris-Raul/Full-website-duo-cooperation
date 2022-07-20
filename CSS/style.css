@@ -35,6 +35,12 @@
   color: rgb(48, 98, 10);
 }
 
+.title {
+  font-size: 2rem;
+  color: rgb(201, 145, 22);
+  text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
+}
+
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.3rem;

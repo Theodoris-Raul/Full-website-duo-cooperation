@@ -1,7 +1,5 @@
-.mainpage {
-    .title {
-    background-color: $main_back_col;
-    font-size: 150px;
-    color: rgb(183, 40, 14);
-    }
+.title {
+    font-size: 2rem;
+    color: $title_scrl_col;
+    text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
 }
