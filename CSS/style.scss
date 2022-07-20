@@ -1,0 +1,16 @@
+/* file import */
+@import 'variables';
+@import 'mixins';
+@import 'card';
+@import 'title';
+   
+body {
+    font-family: $fonts;
+    font-size: $size;
+    background-color: $mainpage_back_col;
+    padding: $spacing;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
