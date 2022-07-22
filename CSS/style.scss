@@ -24,11 +24,40 @@ body {
     width: 100%;
     display: inline-block;
 
+    nav{
+        display: flex;
+        padding: 0.5% 8%;
+        justify-content: space-between;
+    }
+
     nav img {
         width: 160px;
         text-shadow: 1px 1px 1px #0D900D;
     }
-    
+
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 45px;
+        position: relative;
+    }
+
+    .nav-links ul li a{
+        color: $nav_links_col;
+        text-decoration: none;
+        font-size: 18px;
+        text-shadow: 1px 0.5px 1px $nav_links_col;
+        text-decoration: overline dotted $nav_links_overline_col 5px;
+    }
+
+    nav .fa{
+        display: none;
+    }
 
 }
 
