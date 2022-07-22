@@ -2,6 +2,7 @@
 /*colors*/
 /* $radius is the parameter of the function */
 .card {
+  text-align: center;
   background-color: #e1f9df;
   width: 14rem;
   overflow: hidden;
@@ -51,6 +52,7 @@
 .titlescrl {
   font-size: 2rem;
   margin: 2rem;
+  text-align: center;
   color: rgb(201, 145, 22);
   text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
 }
@@ -82,4 +84,6 @@ body {
 }
 #section2 .product_cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
