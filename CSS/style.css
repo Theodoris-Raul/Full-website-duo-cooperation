@@ -49,7 +49,7 @@
 }
 
 .titlescrl {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 2rem;
   color: rgb(201, 145, 22);
   text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
@@ -70,13 +70,16 @@ body {
 }
 
 #section1 {
-  height: 800px;
+  height: 900px;
   width: 100%;
   display: inline-block;
 }
 
 #section2 {
-  height: 300px;
+  height: 500px;
   width: 100%;
+  display: block;
+}
+#section2 .product_cards {
   display: flex;
 }/*# sourceMappingURL=style.css.map */
