@@ -23,10 +23,17 @@ body {
     height: 900px;
     width: 100%;
     display: inline-block;
+
+    nav img {
+        width: 160px;
+        text-shadow: 1px 1px 1px #0D900D;
+    }
+    
+
 }
 
 #section2 {
-    height: 500px;
+    height: 700px;
     width: 100%;
     display: block;
     .product_cards {

@@ -2,17 +2,37 @@
 <html lang="en">
       <head>
             <meta charset="UTF-8">
+
+            <title>Vera</title>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>card with sass</title>
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       </head>
       <body>
 
             <div id="section1">
+
                   <div class="title">
                         <h1>All-natural, organic, authentic<br />aloe vera</h1>
                   </div>
+
+                  <nav>
+                        <a href="index.html"><img src="images/Logo-Vera-Aloe.png"></a>
+                        <div class="nav-links" id="navLinks">
+                              <i class="fa fa-times" onclick="hideMenu()"></i>
+                                    <ul>
+                                          <li class='pr'><a href="">Products</a></li>
+                                          <li><a href="">About Us</a></li>
+                                          <li><a href="">Blog</a></li>
+                                          <li><a href="">Contact Us</a></li>
+                                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                          <i class="fa fa-user"></i>
+                                    </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()"></i>
+                  </nav>
+
             </div>
 
             <div id="section2">      
