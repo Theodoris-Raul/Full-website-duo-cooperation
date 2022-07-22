@@ -55,13 +55,28 @@
   text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.3rem;
   background-color: #e1f9df;
   padding: 2rem;
   min-height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#section1 {
+  height: 800px;
+  width: 100%;
+  display: inline-block;
+}
+
+#section2 {
+  height: 300px;
+  width: 100%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

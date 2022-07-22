@@ -4,6 +4,10 @@
 @import 'card';
 @import 'title';
 @import 'titlescrl';
+
+html {
+    scroll-behavior: smooth;
+}
    
 body {
     font-family: $fonts;
@@ -11,7 +15,18 @@ body {
     background-color: $mainpage_back_col;
     padding: $spacing;
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#section1 {
+    height: 800px;
+    width: 100%;
+    display: inline-block;
+}
+
+#section2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
 }
