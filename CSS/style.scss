@@ -13,6 +13,11 @@ body {
     font-family: $fonts;
     font-size: $size;
     background-color: $mainpage_back_col;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(61, 232, 0, 0.2)),
+    url(images/main-background06.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
     padding: $spacing;
     min-height: 100vh;
     align-items: center;
@@ -32,7 +37,6 @@ body {
 
     nav img {
         width: 160px;
-        text-shadow: 1px 1px 1px #0D900D;
     }
 
     .nav-links{
@@ -52,32 +56,52 @@ body {
         text-decoration: none;
         font-size: 18px;
         text-shadow: 1px 0.5px 1px $nav_links_col;
-        text-decoration: overline dotted $nav_links_overline_col 5px;
     }
 
     nav .fa{
         display: none;
     }
-
-    .nav-links ul li:hover::after{
-        width: 100%;
-        background: #0D900D;
-    }
-
+    
     .nav-links ul li::after{
         content: '';
         width: 0%;
         height: 1.5px;
-        background: #DAAC24;
+        background: rgb(201, 145, 22);;
         display: block;
         margin: 5px 0px;
-        transition: 0.4s;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after{
+        width: 101%;
+        background: $nav_links_col;
+    }
+
+    .nav-links ul i{
+        list-style: none;
+        display: inline-block;
+        padding: 4px 20px;
+        position: relative;
+        color: $nav_links_col;
+        text-shadow: 1px 0.5px 1px #7DC61B;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links ul i:hover{
+        color: #DAAC24;
+        text-decoration: none;
+        background-color: #0D900D;
+        border-radius: 100px;
+        font-size: 20px;
+        transition: 0.7s;
+        display: inline-block;
     }
 
 }
 
 #section2 {
-    height: 700px;
+    height: 600px;
     width: 100%;
     display: block;
     .product_cards {

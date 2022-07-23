@@ -65,6 +65,10 @@ body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.3rem;
   background-color: #e1f9df;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(61, 232, 0, 0.2)), url(images/main-background06.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
   padding: 2rem;
   min-height: 100vh;
   align-items: center;
@@ -83,7 +87,6 @@ body {
 }
 #section1 nav img {
   width: 160px;
-  text-shadow: 1px 1px 1px #0D900D;
 }
 #section1 .nav-links {
   flex: 1;
@@ -100,28 +103,45 @@ body {
   text-decoration: none;
   font-size: 18px;
   text-shadow: 1px 0.5px 1px rgb(48, 98, 10);
-  -webkit-text-decoration: overline dotted rgb(201, 145, 22) 5px;
-          text-decoration: overline dotted rgb(201, 145, 22) 5px;
 }
 #section1 nav .fa {
   display: none;
-}
-#section1 .nav-links ul li:hover::after {
-  width: 100%;
-  background: #0D900D;
 }
 #section1 .nav-links ul li::after {
   content: "";
   width: 0%;
   height: 1.5px;
-  background: #DAAC24;
+  background: rgb(201, 145, 22);
   display: block;
   margin: 5px 0px;
-  transition: 0.4s;
+  transition: 0.5s;
+}
+#section1 .nav-links ul li:hover::after {
+  width: 101%;
+  background: rgb(48, 98, 10);
+}
+#section1 .nav-links ul i {
+  list-style: none;
+  display: inline-block;
+  padding: 4px 20px;
+  position: relative;
+  color: rgb(48, 98, 10);
+  text-shadow: 1px 0.5px 1px #7DC61B;
+  font-size: 20px;
+  cursor: pointer;
+}
+#section1 .nav-links ul i:hover {
+  color: #DAAC24;
+  text-decoration: none;
+  background-color: #0D900D;
+  border-radius: 100px;
+  font-size: 20px;
+  transition: 0.7s;
+  display: inline-block;
 }
 
 #section2 {
-  height: 700px;
+  height: 600px;
   width: 100%;
   display: block;
 }
