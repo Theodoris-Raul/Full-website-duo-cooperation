@@ -106,6 +106,19 @@ body {
 #section1 nav .fa {
   display: none;
 }
+#section1 .nav-links ul li:hover::after {
+  width: 100%;
+  background: #0D900D;
+}
+#section1 .nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background: #DAAC24;
+  display: block;
+  margin: 5px 0px;
+  transition: 0.4s;
+}
 
 #section2 {
   height: 700px;
