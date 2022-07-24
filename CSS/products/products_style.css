@@ -1,1 +1,15 @@
+body {
+    font-family: $fonts;
+    font-size: $size;
+    background-color: $mainpage_back_col;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0, 100, 0, 0.2)),
+    url(images/main-background06.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: $spacing;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 /*# sourceMappingURL=products_style.css.map */
