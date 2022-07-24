@@ -13,7 +13,7 @@ body {
     font-family: $fonts;
     font-size: $size;
     background-color: $mainpage_back_col;
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(61, 232, 0, 0.2)),
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0, 100, 0, 0.2)),
     url(images/main-background06.png);
     background-size: cover;
     background-position: center;
@@ -58,6 +58,14 @@ body {
         text-shadow: 1px 0.5px 1px $nav_links_col;
     }
 
+    .nav-links ul li a:hover{
+        color: $nav_links_overline_col;
+        font-size: 18px;
+        transition: 0.4s;
+        display: inline;
+        text-shadow: 1px 1px 1px $nav_links_col;
+      }
+
     nav .fa{
         display: none;
     }
@@ -66,7 +74,7 @@ body {
         content: '';
         width: 0%;
         height: 1.5px;
-        background: rgb(201, 145, 22);;
+        background: $nav_links_overline_col;
         display: block;
         margin: 5px 0px;
         transition: 0.5s;
@@ -89,7 +97,7 @@ body {
     }
 
     .nav-links ul i:hover{
-        color: #DAAC24;
+        color: $nav_links_overline_col;
         text-decoration: none;
         background-color: #0D900D;
         border-radius: 100px;

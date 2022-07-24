@@ -65,7 +65,7 @@ body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.3rem;
   background-color: #e1f9df;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(61, 232, 0, 0.2)), url(images/main-background06.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/main-background06.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -104,6 +104,13 @@ body {
   font-size: 18px;
   text-shadow: 1px 0.5px 1px rgb(48, 98, 10);
 }
+#section1 .nav-links ul li a:hover {
+  color: rgb(201, 145, 22);
+  font-size: 18px;
+  transition: 0.4s;
+  display: inline;
+  text-shadow: 1px 1px 1px rgb(48, 98, 10);
+}
 #section1 nav .fa {
   display: none;
 }
@@ -131,7 +138,7 @@ body {
   cursor: pointer;
 }
 #section1 .nav-links ul i:hover {
-  color: #DAAC24;
+  color: rgb(201, 145, 22);
   text-decoration: none;
   background-color: #0D900D;
   border-radius: 100px;
