@@ -22,7 +22,6 @@ body {
 }
 
 #section1 {
-  height: 300px;
   width: 100%;
   display: block;
 
@@ -104,17 +103,18 @@ body {
   }
   
   .box_elements {
+    width: 50rem;
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 50%;
+    left: 65%;
     top: 50%;
     transform: translate(-50%, -50%);               
     justify-content: flex-start;
     height: fit-content;
-    background: #0D900D;
+    background: #6e926e;
     color: rgb(0, 0, 0);
     font-size: 17px;
-    padding: 2px;
+    padding: 0px;
     } 
 }
