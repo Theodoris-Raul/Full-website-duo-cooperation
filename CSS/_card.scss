@@ -10,18 +10,19 @@
 
 
     img {
-        height: 15rem;
+        height: 14rem;
         background-size: cover;
         background-position: center center;
     }
 
     .card_content {
+        height: 11rem;
         background-color: rgb(250, 250, 250);
         padding: $spacing;
     }
 
     .card_title {
-        margin: 0;
+        margin: 0 0 1 0;
         color: $card_title_col
     }
 

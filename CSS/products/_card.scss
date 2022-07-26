@@ -1,21 +1,26 @@
 .card {
+    left: 45.4%;
+    top: 33%;
+    position: absolute;
     text-align: center;
-    background-color: $mainpage_back_col;
-    width: 14rem;
+    background-color: rgb(250, 250, 250);
+    width: 44rem;
     overflow: hidden;
-    margin: 2rem;
+    margin: auto;
     box-shadow: 5px 5px 5px 5px rgb(48, 98, 10);
     @include border-radius(0.5rem); /* using the mixins function */
 
-
-
     img {
-        height: 15rem;
+        width: 300px;
+        height: 100%;
+        border: 1px solid rgb(32, 95, 9);
+        height: 19rem;
         background-size: cover;
         background-position: center center;
     }
 
     .card_content {
+        height: 10rem;
         background-color: rgb(250, 250, 250);
         padding: $spacing;
     }
@@ -26,18 +31,12 @@
     }
 
     .card_description {
-        margin: 0;
-        color: $card_description_col
-    }
-
-    &_dark {
-
-        background-color: rgb(200, 151, 46);
-        box-shadow: 5px 5px 5px 5px rgb(200, 151, 46);
-
-
-        .card_title {
-            color: $card_title_col
-        }
+        text-align: center;
+        width: 300px;
+        border: 1px;
+        margin: 0 0 1 0;
+        position: relative;
+        color: $card_description_col;
+        background-position: center center;
     }
 }

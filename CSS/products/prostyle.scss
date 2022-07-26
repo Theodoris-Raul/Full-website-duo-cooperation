@@ -1,165 +1,105 @@
 /* file import */
+@import 'variables';
+@import 'mixins';
+@import 'card';
+@import 'title';
 /*colors*/
 /* $radius is the parameter of the function */
-.card {
-    text-align: center;
-    background-color: #e1f9df;
-    width: 20rem;
-    overflow: hidden;
-    margin: 2rem;
-    box-shadow: 5px 5px 5px 5px rgb(48, 98, 10);
-    border-radius: 0.5rem;
-    /* using the mixins function */
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.3rem;
+  background-color: $mainpage_back_col;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/product-01.png);
+  background-size: 79%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 2rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#section1 {
+  height: 300px;
+  width: 100%;
+  display: block;
+
+  nav{
+      display: flex;
+      padding: 0.5% 9%;
+      justify-content: space-between;
   }
 
-  .card img {
-    height: 28rem;
-    background-size: cover;
-    background-position: center center;
+  nav img {
+      width: 160px;
   }
 
-  .card .card_content {
-    height: 12rem;
-    background-color: rgb(250, 250, 250);
-    padding: 2rem;
+  .nav-links{
+      flex: 1;
+      text-align: right;
   }
 
-  .card .card_title {
-    margin: 0;
-    color: rgb(48, 98, 10);
+  .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 10px 45px;
+      position: relative;
   }
 
-  .card .card_description {
-    margin: 0;
-    color: rgb(0, 0, 0);
+  .nav-links ul li a{
+      color: $nav_links_col;
+      text-decoration: none;
+      font-size: 18px;
+      text-shadow: 1px 0.5px 1px $nav_links_col;
   }
 
-  .card_dark {
-    background-color: rgb(200, 151, 46);
-    box-shadow: 5px 5px 5px 5px rgb(200, 151, 46);
-  }
+  .nav-links ul li a:hover{
+      color: $nav_links_overline_col;
+      font-size: 18px;
+      transition: 0.4s;
+      display: inline;
+      text-shadow: 1px 1px 1px $nav_links_col;
+    }
 
-  .card_dark .card_title {
-    color: rgb(48, 98, 10);
+  nav .fa{
+      display: none;
   }
   
-  .title {
-    width: 100%;
-    height: 1050px;
-    bottom: 7rem;
-    position: relative;
-    text-align: center;
-    top: 5rem;
-    font-size: 1.8rem;
-    margin: 2rem;
-    color: rgb(48, 98, 10);
-    text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
-  }
-  
-  .titlescrl {
-    font-size: 2rem;
-    margin: 2rem;
-    text-align: center;
-    color: rgb(201, 145, 22);
-    text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: "Poppins", Helvetica, sans-serif;
-    font-size: 1.3rem;
-    background-color: #e1f9df;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/main-background06.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 2rem;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #section1 {
-    height: 700px;
-    width: 100%;
-    display: inline-block;
+  .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 1.5px;
+      background: $nav_links_overline_col;
+      display: block;
+      margin: 5px 0px;
+      transition: 0.5s;
   }
 
-  #section1 nav {
-    display: flex;
-    padding: 0.5% 8%;
-    justify-content: space-between;
-  }
-  #section1 nav img {
-    width: 160px;
+  .nav-links ul li:hover::after{
+      width: 101%;
+      background: $nav_links_col;
   }
 
-  #section1 .nav-links {
-    flex: 1;
-    text-align: right;
+  .nav-links ul i{
+      list-style: none;
+      display: inline-block;
+      padding: 4px 20px;
+      position: relative;
+      color: $nav_links_col;
+      text-shadow: 1px 0.5px 1px #7DC61B;
+      font-size: 20px;
+      cursor: pointer;
   }
 
-  #section1 .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 45px;
-    position: relative;
+  .nav-links ul i:hover{
+      color: $nav_links_overline_col;
+      text-decoration: none;
+      background-color: #0D900D;
+      border-radius: 100px;
+      font-size: 20px;
+      transition: 0.7s;
+      display: inline-block;
   }
-
-  #section1 .nav-links ul li a {
-    color: rgb(48, 98, 10);
-    text-decoration: none;
-    font-size: 18px;
-    text-shadow: 1px 0.5px 1px rgb(48, 98, 10);
-  }
-
-  #section1 .nav-links ul li a:hover {
-    color: rgb(201, 145, 22);
-    font-size: 18px;
-    transition: 0.4s;
-    display: inline;
-    text-shadow: 1px 1px 1px rgb(48, 98, 10);
-  }
-
-  #section1 nav .fa {
-    display: none;
-  }
-
-  #section1 .nav-links ul li::after {
-    content: "";
-    width: 0%;
-    height: 1.5px;
-    background: rgb(201, 145, 22);
-    display: block;
-    margin: 5px 0px;
-    transition: 0.5s;
-  }
-
-  #section1 .nav-links ul li:hover::after {
-    width: 101%;
-    background: rgb(48, 98, 10);
-  }
-
-  #section1 .nav-links ul i {
-    list-style: none;
-    display: inline-block;
-    padding: 4px 20px;
-    position: relative;
-    color: rgb(48, 98, 10);
-    text-shadow: 1px 0.5px 1px #7DC61B;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  #section1 .nav-links ul i:hover {
-    color: rgb(201, 145, 22);
-    text-decoration: none;
-    background-color: #0D900D;
-    border-radius: 100px;
-    font-size: 20px;
-    transition: 0.7s;
-    display: inline-block;
-  }
+}

@@ -2,78 +2,67 @@
 /*colors*/
 /* $radius is the parameter of the function */
 .card {
+  left: 45.4%;
+  top: 33%;
+  position: absolute;
   text-align: center;
-  background-color: #e1f9df;
-  width: 20rem;
+  background-color: rgb(250, 250, 250);
+  width: 44rem;
   overflow: hidden;
-  margin: 2rem;
+  margin: auto;
   box-shadow: 5px 5px 5px 5px rgb(48, 98, 10);
   border-radius: 0.5rem;
   /* using the mixins function */
 }
-
 .card img {
-  height: 28rem;
+  width: 300px;
+  height: 100%;
+  border: 1px solid rgb(32, 95, 9);
+  height: 19rem;
   background-size: cover;
   background-position: center center;
 }
-
 .card .card_content {
-  height: 12rem;
+  height: 10rem;
   background-color: rgb(250, 250, 250);
   padding: 2rem;
 }
-
 .card .card_title {
   margin: 0;
   color: rgb(48, 98, 10);
 }
-
 .card .card_description {
-  margin: 0;
+  text-align: center;
+  width: 300px;
+  border: 1px;
+  margin: 0 0 1 0;
+  position: relative;
   color: rgb(0, 0, 0);
-}
-
-.card_dark {
-  background-color: rgb(200, 151, 46);
-  box-shadow: 5px 5px 5px 5px rgb(200, 151, 46);
-}
-
-.card_dark .card_title {
-  color: rgb(48, 98, 10);
+  background-position: center center;
 }
 
 .title {
   width: 100%;
-  height: 1050px;
-  bottom: 7rem;
+  height: 100px;
+  bottom: 8rem;
   position: relative;
   text-align: center;
-  top: 5rem;
+  top: 3.5rem;
   font-size: 1.8rem;
   margin: 2rem;
   color: rgb(48, 98, 10);
   text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
 }
 
-.titlescrl {
-  font-size: 2rem;
-  margin: 2rem;
-  text-align: center;
-  color: rgb(201, 145, 22);
-  text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+/*colors*/
+/* $radius is the parameter of the function */
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 1.3rem;
   background-color: #e1f9df;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/main-background06.png);
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/product-01.png);
+  background-size: 79%;
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
   padding: 2rem;
@@ -83,40 +72,34 @@ body {
 }
 
 #section1 {
-  height: 700px;
+  height: 300px;
   width: 100%;
-  display: inline-block;
+  display: block;
 }
-
 #section1 nav {
   display: flex;
-  padding: 0.5% 8%;
+  padding: 0.5% 9%;
   justify-content: space-between;
 }
-
 #section1 nav img {
   width: 160px;
 }
-
 #section1 .nav-links {
   flex: 1;
   text-align: right;
 }
-
 #section1 .nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 45px;
   position: relative;
 }
-
 #section1 .nav-links ul li a {
   color: rgb(48, 98, 10);
   text-decoration: none;
   font-size: 18px;
   text-shadow: 1px 0.5px 1px rgb(48, 98, 10);
 }
-
 #section1 .nav-links ul li a:hover {
   color: rgb(201, 145, 22);
   font-size: 18px;
@@ -124,11 +107,9 @@ body {
   display: inline;
   text-shadow: 1px 1px 1px rgb(48, 98, 10);
 }
-
 #section1 nav .fa {
   display: none;
 }
-
 #section1 .nav-links ul li::after {
   content: "";
   width: 0%;
@@ -138,12 +119,10 @@ body {
   margin: 5px 0px;
   transition: 0.5s;
 }
-
 #section1 .nav-links ul li:hover::after {
   width: 101%;
   background: rgb(48, 98, 10);
 }
-
 #section1 .nav-links ul i {
   list-style: none;
   display: inline-block;
@@ -154,7 +133,6 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-
 #section1 .nav-links ul i:hover {
   color: rgb(201, 145, 22);
   text-decoration: none;
