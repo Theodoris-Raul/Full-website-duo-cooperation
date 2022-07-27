@@ -66,6 +66,9 @@ body {
   margin-top: 5px;
   margin-left: 10px;
 }
+.row .left_side .header img {
+  width: 100px;
+}
 .row .left_side .container_box {
   display: block;
   position: relative;
