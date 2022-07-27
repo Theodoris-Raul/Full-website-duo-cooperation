@@ -1,0 +1,143 @@
+/* file import */
+/*colors*/
+/* $radius is the parameter of the function */
+.card {
+  border-radius: 0.5rem;
+  /* using the mixins function */
+}
+.card img {
+  width: 300px;
+  height: 100%;
+  border: 1px solid rgb(32, 95, 9);
+  height: 19rem;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card_title {
+  margin: 0;
+  color: rgb(48, 98, 10);
+}
+.card .card_description {
+  text-align: center;
+  border: 1px;
+  margin: 0 0 1 0;
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-position: center center;
+}
+
+.title {
+  height: 10px;
+  position: relative;
+  text-align: left;
+  font-size: 1.8rem;
+  padding: 2rem 2rem;
+  color: rgb(48, 98, 10);
+  text-shadow: 2px 2px 2.5px rgb(48, 98, 10);
+}
+
+/*colors*/
+/* $radius is the parameter of the function */
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.3rem;
+  background-color: #e1f9df;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/product-01.png);
+  background-size: 79%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 2rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#section1 {
+  width: 100%;
+  display: block;
+}
+#section1 nav {
+  display: flex;
+  padding: 0.5% 9%;
+  justify-content: space-between;
+}
+#section1 nav img {
+  width: 160px;
+}
+#section1 .nav-links {
+  flex: 1;
+  text-align: right;
+}
+#section1 .nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 45px;
+  position: relative;
+}
+#section1 .nav-links ul li a {
+  color: rgb(48, 98, 10);
+  text-decoration: none;
+  font-size: 18px;
+  text-shadow: 1px 0.5px 1px rgb(48, 98, 10);
+}
+#section1 .nav-links ul li a:hover {
+  color: rgb(201, 145, 22);
+  font-size: 18px;
+  transition: 0.4s;
+  display: inline;
+  text-shadow: 1px 1px 1px rgb(48, 98, 10);
+}
+#section1 nav .fa {
+  display: none;
+}
+#section1 .nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background: rgb(201, 145, 22);
+  display: block;
+  margin: 5px 0px;
+  transition: 0.5s;
+}
+#section1 .nav-links ul li:hover::after {
+  width: 101%;
+  background: rgb(48, 98, 10);
+}
+#section1 .nav-links ul i {
+  list-style: none;
+  display: inline-block;
+  padding: 4px 20px;
+  position: relative;
+  color: rgb(48, 98, 10);
+  text-shadow: 1px 0.5px 1px #7DC61B;
+  font-size: 20px;
+  cursor: pointer;
+}
+#section1 .nav-links ul i:hover {
+  color: rgb(201, 145, 22);
+  text-decoration: none;
+  background-color: #0D900D;
+  border-radius: 100px;
+  font-size: 20px;
+  transition: 0.7s;
+  display: inline-block;
+}
+#section1 .box_elements {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 64%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  justify-content: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #6e926e;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 0px;
+  border-radius: 30px;
+}/*# sourceMappingURL=prostyle.css.map */
