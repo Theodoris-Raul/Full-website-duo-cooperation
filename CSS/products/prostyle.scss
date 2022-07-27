@@ -107,8 +107,8 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 65%;
-    top: 50%;
+    left: 64%;
+    top: 52%;
     transform: translate(-50%, -50%);               
     justify-content: flex-start;
     height: fit-content;
@@ -116,5 +116,6 @@ body {
     color: rgb(0, 0, 0);
     font-size: 17px;
     padding: 0px;
+    border-radius: 30px;
     } 
 }
