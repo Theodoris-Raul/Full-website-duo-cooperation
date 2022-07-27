@@ -1,0 +1,207 @@
+/* file import */
+/*colors*/
+/* $radius is the parameter of the function */
+.card {
+  background-color: #0099ff;
+  width: 14rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px 5px rgb(48, 98, 10);
+  border-radius: 0.5rem;
+  /* using the mixins function */
+}
+.card img {
+  height: 15rem;
+  background-size: cover;
+  background-position: center center;
+}
+.card .card_content {
+  background-color: rgb(250, 250, 250);
+  padding: 0px;
+}
+.card .card_title {
+  margin: 0;
+  color: rgb(48, 98, 10);
+}
+.card .card_description {
+  margin: 0;
+  color: rgb(121, 34, 143);
+}
+.card_dark {
+  background-color: rgb(200, 151, 46);
+  box-shadow: 5px 5px 5px 5px rgb(200, 151, 46);
+}
+.card_dark .card_title {
+  color: rgb(48, 98, 10);
+}
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.3rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.row .left_side {
+  flex: 50%;
+  background-color: #f6e5fd;
+  padding: 0px;
+}
+.row .left_side .header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  height: 40px;
+  background: #f6e5fd;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+}
+.row .left_side .header h1 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.row .left_side .container_box {
+  display: block;
+  position: relative;
+  padding: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.row .left_side .container_box .box_elements {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+}
+.row .left_side .input_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .left_side .input_section input[type=text], .row .left_side .input_section [type=email], .row .left_side .input_section [type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 50%;
+  border: 2px solid rgb(39, 16, 44);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.row .left_side button:hover {
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.774);
+  border-color: rgb(0, 0, 0);
+}
+.row .left_side button {
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 15px;
+  border: 2px solid rgb(105, 29, 86);
+  background: #c448bd;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+.row .left_side .create_acc_btn {
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
+.row .left_side .psword {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #541364;
+}
+.row .left_side .back_to_login {
+  display: block;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #541364;
+}
+.row .left_side .single_line {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(39, 16, 44, 0.425);
+}
+.row .left_side .last_box_element {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+}
+.row .left_side .last_box_element a {
+  padding: 7px 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid #541364;
+  background: #541364;
+  color: white;
+}
+.row .right_side {
+  flex: 50%;
+  background-color: rgb(255, 187, 0);
+  padding: 0px;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(0, 204, 255);
+}
+.left .container_1 .login {
+  display: flex !important;
+  flex-basis: 100% !important;
+  height: 100%;
+  background: #1abc9c;
+  color: white;
+  font-size: 63px;
+}
+
+.right {
+  right: 0;
+  background-color: rgb(132, 0, 255);
+}/*# sourceMappingURL=style.css.map */

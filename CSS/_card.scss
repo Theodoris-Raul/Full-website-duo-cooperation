@@ -1,24 +1,28 @@
 .card {
+    text-align: center;
     background-color: $mainpage_back_col;
     width: 14rem;
     overflow: hidden;
     margin: 2rem;
     box-shadow: 5px 5px 5px 5px rgb(48, 98, 10);
     @include border-radius(0.5rem); /* using the mixins function */
-    
+
+
+
     img {
-        height: 15rem;
+        height: 14rem;
         background-size: cover;
         background-position: center center;
     }
 
     .card_content {
+        height: 11rem;
         background-color: rgb(250, 250, 250);
         padding: $spacing;
     }
 
     .card_title {
-        margin: 0;
+        margin: 0 0 1 0;
         color: $card_title_col
     }
 

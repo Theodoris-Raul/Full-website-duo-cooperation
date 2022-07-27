@@ -1,0 +1,121 @@
+/* file import */
+@import 'variables';
+@import 'mixins';
+@import 'card';
+@import 'title';
+/*colors*/
+/* $radius is the parameter of the function */
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.3rem;
+  background-color: $mainpage_back_col;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 100, 0, 0.2)), url(images/product-01.png);
+  background-size: 79%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 2rem;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#section1 {
+  width: 100%;
+  display: block;
+
+  nav{
+      display: flex;
+      padding: 0.5% 9%;
+      justify-content: space-between;
+  }
+
+  nav img {
+      width: 160px;
+  }
+
+  .nav-links{
+      flex: 1;
+      text-align: right;
+  }
+
+  .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 10px 45px;
+      position: relative;
+  }
+
+  .nav-links ul li a{
+      color: $nav_links_col;
+      text-decoration: none;
+      font-size: 18px;
+      text-shadow: 1px 0.5px 1px $nav_links_col;
+  }
+
+  .nav-links ul li a:hover{
+      color: $nav_links_overline_col;
+      font-size: 18px;
+      transition: 0.4s;
+      display: inline;
+      text-shadow: 1px 1px 1px $nav_links_col;
+    }
+
+  nav .fa{
+      display: none;
+  }
+  
+  .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 1.5px;
+      background: $nav_links_overline_col;
+      display: block;
+      margin: 5px 0px;
+      transition: 0.5s;
+  }
+
+  .nav-links ul li:hover::after{
+      width: 101%;
+      background: $nav_links_col;
+  }
+
+  .nav-links ul i{
+      list-style: none;
+      display: inline-block;
+      padding: 4px 20px;
+      position: relative;
+      color: $nav_links_col;
+      text-shadow: 1px 0.5px 1px #7DC61B;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  .nav-links ul i:hover{
+      color: $nav_links_overline_col;
+      text-decoration: none;
+      background-color: #0D900D;
+      border-radius: 100px;
+      font-size: 20px;
+      transition: 0.7s;
+      display: inline-block;
+  }
+  
+  .box_elements {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 64%;
+    top: 52%;
+    transform: translate(-50%, -50%);               
+    justify-content: flex-start;
+    height: fit-content;
+    background: #6e926e;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 0px;
+    border-radius: 30px;
+    } 
+}
