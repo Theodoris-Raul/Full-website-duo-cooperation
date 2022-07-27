@@ -49,7 +49,7 @@ body {
 }
 .row .left_side {
   flex: 50%;
-  background-color: #f6e5fd;
+  background-color: #ff0000;
   padding: 0px;
 }
 .row .left_side .header {
@@ -204,4 +204,4 @@ body {
 .right {
   right: 0;
   background-color: rgb(132, 0, 255);
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=loginstyle.css.map */

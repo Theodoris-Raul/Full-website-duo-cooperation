@@ -1,8 +1,8 @@
 
 /* file import */
-@import 'variables';
-@import 'mixins';
-@import 'card';
+@import 'loginvariables';
+@import 'loginmixins';
+@import 'logincard';
    
 body {
     font-family: $fonts;
