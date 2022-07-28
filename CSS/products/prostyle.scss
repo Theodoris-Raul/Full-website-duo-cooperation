@@ -108,7 +108,7 @@ body {
     .box_elements {
     width: 50rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     left: 64%;
     top: 52%;
@@ -120,5 +120,34 @@ body {
     font-size: 17px;
     padding: 0px;
     border-radius: 30px;
-    } 
+    }
+
+        .vertical {
+            font-size: 18px;
+            width: 14rem;
+            position: relative;
+            text-align: left;
+            padding: 2rem 2rem;
+            display: inline;
+        }
+
+            .title {
+                font-size: 28px;
+                padding: 2rem 2rem;
+                bottom: 4rem;
+                display: inline;
+            }
+
+            .card_content {
+                padding: 2rem 2rem;
+                bottom: 4rem;
+                display: inline;
+            }
+
+        img {
+            width: 20rem;
+            height: 25rem;
+        }
+
+        
 }
