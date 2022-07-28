@@ -171,4 +171,27 @@ body {
   left: 16rem;
   width: 20rem;
   height: 25rem;
+}
+#section2 .add-btn {
+  width: 100px;
+  text-align: center;
+  display: inline;
+  left: 76%;
+  top: 72%;
+  text-decoration: none;
+  color: #d0c49b;
+  border: 3px solid #063c0e;
+  padding: 10px 22px;
+  font-size: 18px;
+  background: #063c0e;
+  position: absolute;
+  cursor: pointer;
+  text-shadow: 0.3px 0.3px 0.3px #d0c49b;
+}
+#section2 .add-btn:hover {
+  color: #063c0e;
+  text-shadow: 0.3px 0.3px 0.3px #063c0e;
+  border: 3px solid #63A011;
+  background: #63A011;
+  transition: 0.5s;
 }/*# sourceMappingURL=prostyle.css.map */
