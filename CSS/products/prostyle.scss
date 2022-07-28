@@ -101,8 +101,11 @@ body {
       transition: 0.7s;
       display: inline-block;
   }
-  
-  .box_elements {
+}
+
+#section2 {
+
+    .box_elements {
     width: 50rem;
     display: flex;
     flex-direction: column;
