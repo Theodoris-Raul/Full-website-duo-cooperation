@@ -118,7 +118,7 @@ nav .fa{
                 font-weight: 800;
             }
 
-            ul {
+            .ul_1 {
                 display: flex;
                 justify-content: space-between;
                 list-style: none;
@@ -130,6 +130,16 @@ nav .fa{
                 .products_li {
                     margin-right: 30vh;
                 }
+            }
+
+            .ul_2 {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
             }
         }
     }

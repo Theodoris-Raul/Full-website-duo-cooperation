@@ -117,7 +117,7 @@ nav .fa {
   font-size: 30px;
   font-weight: 800;
 }
-.basket_row .basket_left_side .box_elements ul {
+.basket_row .basket_left_side .box_elements .ul_1 {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -126,8 +126,17 @@ nav .fa {
   font-weight: bold;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 }
-.basket_row .basket_left_side .box_elements ul .products_li {
+.basket_row .basket_left_side .box_elements .ul_1 .products_li {
   margin-right: 30vh;
+}
+.basket_row .basket_left_side .box_elements .ul_2 {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 }
 .basket_row .basket_right_side {
   flex: 28%;
