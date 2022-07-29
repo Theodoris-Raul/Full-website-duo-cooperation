@@ -161,11 +161,35 @@ body {
             height: 25rem;
         }
 
+        .nav2{
+            display: flex;
+            padding: 0.5% 9%;
+            justify-content: space-between;
+        }
+
+        .add_remove {
+            flex: 1;
+            text-align: center;
+        }
+
+        .add_remove ul{
+            list-style: none;
+            display: flex;
+            padding: 10px 45px;
+            position: relative;
+            left: 25rem;
+            top: 55%;
+            font-size: 25px;
+            color: $nav_links_col;
+            text-shadow: 1px 0.5px 1px #063c0e;
+            cursor: pointer;
+        }
+
         .add-btn{
             width: 100px;
             text-align: center;
             display: inline;
-            left: 76%;
+            left: 75.5%;
             top: 77%;
             text-decoration: none;
             color: #d0c49b;
@@ -176,7 +200,7 @@ body {
             position: absolute;
             cursor: pointer;
             text-shadow: 0.3px 0.3px 0.3px #d0c49b;
-          }
+        }
           
           .add-btn:hover{
             color: #063c0e;

@@ -174,11 +174,32 @@ body {
   width: 20rem;
   height: 25rem;
 }
+#section2 .nav2 {
+  display: flex;
+  padding: 0.5% 9%;
+  justify-content: space-between;
+}
+#section2 .add_remove {
+  flex: 1;
+  text-align: center;
+}
+#section2 .add_remove ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 45px;
+  position: relative;
+  left: 25rem;
+  top: 55%;
+  font-size: 25px;
+  color: rgb(48, 98, 10);
+  text-shadow: 1px 0.5px 1px #063c0e;
+  cursor: pointer;
+}
 #section2 .add-btn {
   width: 100px;
   text-align: center;
   display: inline;
-  left: 76%;
+  left: 75.5%;
   top: 77%;
   text-decoration: none;
   color: #d0c49b;
