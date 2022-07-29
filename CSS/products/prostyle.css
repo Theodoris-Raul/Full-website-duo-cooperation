@@ -137,7 +137,6 @@ body {
   background: #d0c49b;
   color: rgb(0, 0, 0);
   font-size: 17px;
-  padding: 0px;
   border-radius: 30px;
 }
 #section2 .vertical {
@@ -145,24 +144,25 @@ body {
   width: 14rem;
   position: relative;
   text-align: left;
-  padding: 2rem 2rem;
+  padding: 0rem 3rem;
   display: inline;
 }
 #section2 .title {
   right: 6%;
   font-size: 28px;
-  padding: 2rem 2rem;
-  bottom: 4rem;
+  padding: 0rem 30rem;
+  bottom: 2rem;
   display: inline;
 }
 #section2 .card_content {
   right: 6%;
   position: relative;
-  bottom: 4rem;
+  bottom: 2.5rem;
   display: inline;
   font-weight: bold;
 }
 #section2 .price {
+  top: 2rem;
   right: 6%;
   position: relative;
   display: inline;
@@ -174,23 +174,18 @@ body {
   width: 20rem;
   height: 25rem;
 }
-#section2 .nav2 {
-  display: flex;
-  padding: 0.5% 9%;
-  justify-content: space-between;
+#section2 #add_remove {
+  width: 100%;
+  height: 90px;
+  white-space: nowrap;
 }
-#section2 .add_remove {
-  flex: 1;
-  text-align: center;
-}
-#section2 .add_remove ul {
+#section2 .elem {
   list-style: none;
-  display: flex;
-  padding: 10px 45px;
+  display: inline-block;
   position: relative;
   left: 25rem;
-  top: 55%;
-  font-size: 25px;
+  top: 15rem;
+  font-size: 20px;
   color: rgb(48, 98, 10);
   text-shadow: 1px 0.5px 1px #063c0e;
   cursor: pointer;

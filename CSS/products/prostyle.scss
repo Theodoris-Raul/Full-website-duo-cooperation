@@ -118,7 +118,6 @@ body {
     background: $product_box_col;
     color: rgb(0, 0, 0);
     font-size: 17px;
-    padding: 0px;
     border-radius: 30px;
     }
 
@@ -127,27 +126,28 @@ body {
             width: 14rem;
             position: relative;
             text-align: left;
-            padding: 2rem 2rem;
+            padding: 0rem 3rem;
             display: inline;
         }
 
             .title {
                 right: 6%;
                 font-size: 28px;
-                padding: 2rem 2rem;
-                bottom: 4rem;
+                padding: 0rem 30rem;
+                bottom: 2rem;
                 display: inline;
             }
 
             .card_content {
                 right: 6%;
                 position: relative;
-                bottom: 4rem;
+                bottom: 2.5rem;
                 display: inline;
                 font-weight: bold;
             }
 
             .price {
+                top: 2rem;
                 right: 6%;
                 position: relative;
                 display: inline;
@@ -161,25 +161,19 @@ body {
             height: 25rem;
         }
 
-        .nav2{
-            display: flex;
-            padding: 0.5% 9%;
-            justify-content: space-between;
+        #add_remove {
+            width: 100%;
+            height: 90px;
+            white-space: nowrap;
         }
 
-        .add_remove {
-            flex: 1;
-            text-align: center;
-        }
-
-        .add_remove ul{
+        .elem {
             list-style: none;
-            display: flex;
-            padding: 10px 45px;
+            display: inline-block;
             position: relative;
             left: 25rem;
-            top: 55%;
-            font-size: 25px;
+            top: 15rem;
+            font-size: 20px;
             color: $nav_links_col;
             text-shadow: 1px 0.5px 1px #063c0e;
             cursor: pointer;
