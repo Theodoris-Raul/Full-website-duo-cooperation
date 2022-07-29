@@ -137,7 +137,6 @@ body {
   background: #d0c49b;
   color: rgb(0, 0, 0);
   font-size: 17px;
-  padding: 0px;
   border-radius: 30px;
 }
 #section2 .vertical {
@@ -174,23 +173,15 @@ body {
   width: 20rem;
   height: 25rem;
 }
-#section2 .nav2 {
-  display: flex;
-  padding: 0.5% 9%;
-  justify-content: space-between;
-}
 #section2 .add_remove {
-  flex: 1;
-  text-align: center;
-}
-#section2 .add_remove ul {
+  white-space: nowrap;
+  overflow-x: auto;
   list-style: none;
-  display: flex;
-  padding: 10px 45px;
+  display: inline-block;
   position: relative;
   left: 25rem;
   top: 55%;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(48, 98, 10);
   text-shadow: 1px 0.5px 1px #063c0e;
   cursor: pointer;
