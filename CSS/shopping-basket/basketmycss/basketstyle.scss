@@ -1,6 +1,10 @@
 /* file import */
 @import 'basketvariables';
 
+body {
+    font-family: $fonts;
+}
+
 nav{
     display: flex;
     padding: 0.5% 9%;
@@ -76,4 +80,63 @@ nav .fa{
     font-size: 20px;
     transition: 0.7s;
     display: inline-block;
+}
+
+.basket_row {  
+    display: flex;
+    flex-wrap: wrap;
+    height:70vh;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+    
+    .basket_left_side {
+        flex: 70%;
+        background-color: #1e4cca;
+        border-radius: 10px;
+
+        .box_elements {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);               
+            justify-content: flex-start;
+            height: fit-content;
+            background: transparent;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            padding: 10px;
+
+            header {
+                margin-top: auto;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-weight: 800;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+
+                .products_li {
+                    margin-right: 30vh;
+                }
+            }
+        }
+    }
+
+    .basket_right_side {
+        flex: 28%;
+        background-color: #f5980d;
+        border-radius: 10px;
+    }
 }
