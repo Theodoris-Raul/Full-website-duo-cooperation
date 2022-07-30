@@ -9,20 +9,10 @@ body {
     font-size: $size;    
     padding: $spacing;
     margin: $spacing;
-
-    .login_bg_img {
-        background-image: $body_login_bg;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .create_bg_img {
-        background-image: $body_create_bg;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    background-image: $body_create_bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
 }
 
 .row {  

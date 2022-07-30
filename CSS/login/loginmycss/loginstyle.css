@@ -40,18 +40,10 @@ body {
   font-size: 1.3rem;
   padding: 0px;
   margin: 0px;
-}
-body .login_bg_img {
-  background-image: url(../images/login-aloe-vera2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body .create_bg_img {
   background-image: url(../images/create-aloe-vera2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 85%;
 }
 
 .row {
