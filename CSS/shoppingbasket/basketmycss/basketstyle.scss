@@ -144,13 +144,18 @@ nav .fa{
 
                 img {
                     width:70px;
+                    
                 }
                 
-                .products_li {
-                    margin-right: 30vh;
-                    display: flex;
-                    justify-content: flex-start !important;
+                .after_img_li {
+                    margin-left: -15vh;
                 }
+
+                .remaining_li {
+                    display: flex;
+                    row-gap: -10vh;
+                }
+                
             }
         }
     }

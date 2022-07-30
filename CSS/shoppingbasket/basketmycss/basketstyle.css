@@ -142,10 +142,12 @@ nav .fa {
 .basket_row .basket_left_side .box_elements .ul_2 img {
   width: 70px;
 }
-.basket_row .basket_left_side .box_elements .ul_2 .products_li {
-  margin-right: 30vh;
+.basket_row .basket_left_side .box_elements .ul_2 .after_img_li {
+  margin-left: -15vh;
+}
+.basket_row .basket_left_side .box_elements .ul_2 .remaining_li {
   display: flex;
-  justify-content: flex-start !important;
+  row-gap: -10vh;
 }
 .basket_row .basket_right_side {
   flex: 28%;
