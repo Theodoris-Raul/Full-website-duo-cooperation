@@ -131,7 +131,7 @@ body {
         }
 
             .title {
-                right: 6%;
+                right: 10%;
                 font-size: 28px;
                 padding: 0rem 30rem;
                 bottom: 2rem;
@@ -139,7 +139,7 @@ body {
             }
 
             .card_content {
-                right: 6%;
+                right: 10%;
                 position: relative;
                 bottom: 2.5rem;
                 display: inline;
@@ -148,7 +148,7 @@ body {
 
             .price {
                 top: 2rem;
-                right: 6%;
+                right: 10%;
                 position: relative;
                 display: inline;
                 font-weight: bold;
@@ -161,23 +161,27 @@ body {
             height: 25rem;
         }
 
-        #add_remove {
-            width: 100%;
-            height: 90px;
-            white-space: nowrap;
+        .add_remove {
+            display: inline-block;
+            white-space: normal;
+            border: 1px solid #063c0e;
         }
 
-        .elem {
-            list-style: none;
-            display: inline-block;
-            position: relative;
-            left: 25rem;
-            top: 15rem;
-            font-size: 20px;
-            color: $nav_links_col;
-            text-shadow: 1px 0.5px 1px #063c0e;
-            cursor: pointer;
-        }
+            .elem {
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                justify-content: flex-start;
+                margin: 0rem 1rem;
+                left: 19.2rem;
+                top: 15.5rem;
+                font-size: 18px;
+                color: #000000;
+                text-align: center;
+                text-shadow: 1px 0.5px 1px #000000;
+                cursor: pointer;
+
+            }
 
         .add-btn{
             width: 100px;
