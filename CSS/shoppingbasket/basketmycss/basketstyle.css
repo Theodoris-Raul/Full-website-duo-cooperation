@@ -92,7 +92,7 @@ nav .fa {
 }
 .basket_row .basket_left_side {
   flex: 70%;
-  background-color: #1e4cca;
+  background-color: #ece8ab;
   border-radius: 10px;
 }
 .basket_row .basket_left_side .box_elements {
@@ -155,6 +155,6 @@ nav .fa {
 }
 .basket_row .basket_right_side {
   flex: 28%;
-  background-color: #f5980d;
+  background-color: #c08a38;
   border-radius: 10px;
 }/*# sourceMappingURL=basketstyle.css.map */
