@@ -135,11 +135,22 @@ nav .fa{
             .ul_2 {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 list-style: none;
                 padding: 20px;
                 font-size: 15px;
                 font-weight: bold;
                 border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+
+                img {
+                    width:70px;
+                }
+                
+                .products_li {
+                    margin-right: 30vh;
+                    display: flex;
+                    justify-content: flex-start !important;
+                }
             }
         }
     }
