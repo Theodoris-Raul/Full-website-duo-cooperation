@@ -128,11 +128,16 @@ nav .fa{
                 border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 
                 .products_li {
-                    margin-right: 26.5vh;
+                    margin-right: 26vh;
                 }
 
                 .price_header {
                     margin-right: 17vh;
+                }
+
+                .after_products_li {
+                    margin-left: 10vh;
+                    position: absolute;
                 }
             }
 

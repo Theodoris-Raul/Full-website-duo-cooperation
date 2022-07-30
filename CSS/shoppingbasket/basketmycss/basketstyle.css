@@ -127,10 +127,14 @@ nav .fa {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 }
 .basket_row .basket_left_side .box_elements .ul_1 .products_li {
-  margin-right: 26.5vh;
+  margin-right: 26vh;
 }
 .basket_row .basket_left_side .box_elements .ul_1 .price_header {
   margin-right: 17vh;
+}
+.basket_row .basket_left_side .box_elements .ul_1 .after_products_li {
+  margin-left: 10vh;
+  position: absolute;
 }
 .basket_row .basket_left_side .box_elements .ul_2 {
   display: flex;
