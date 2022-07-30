@@ -127,7 +127,10 @@ nav .fa {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 }
 .basket_row .basket_left_side .box_elements .ul_1 .products_li {
-  margin-right: 30vh;
+  margin-right: 26.5vh;
+}
+.basket_row .basket_left_side .box_elements .ul_1 .price_header {
+  margin-right: 17vh;
 }
 .basket_row .basket_left_side .box_elements .ul_2 {
   display: flex;
@@ -141,13 +144,14 @@ nav .fa {
 }
 .basket_row .basket_left_side .box_elements .ul_2 img {
   width: 70px;
+  margin-right: 25vh;
 }
 .basket_row .basket_left_side .box_elements .ul_2 .after_img_li {
-  margin-left: -15vh;
+  margin-left: 10vh;
+  position: absolute;
 }
 .basket_row .basket_left_side .box_elements .ul_2 .remaining_li {
-  display: flex;
-  row-gap: -10vh;
+  padding: 0;
 }
 .basket_row .basket_right_side {
   flex: 28%;
