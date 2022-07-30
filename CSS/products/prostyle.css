@@ -148,14 +148,14 @@ body {
   display: inline;
 }
 #section2 .title {
-  right: 6%;
+  right: 10%;
   font-size: 28px;
   padding: 0rem 30rem;
   bottom: 2rem;
   display: inline;
 }
 #section2 .card_content {
-  right: 6%;
+  right: 10%;
   position: relative;
   bottom: 2.5rem;
   display: inline;
@@ -163,7 +163,7 @@ body {
 }
 #section2 .price {
   top: 2rem;
-  right: 6%;
+  right: 10%;
   position: relative;
   display: inline;
   font-weight: bold;
@@ -174,20 +174,23 @@ body {
   width: 20rem;
   height: 25rem;
 }
-#section2 #add_remove {
-  width: 100%;
-  height: 90px;
-  white-space: nowrap;
+#section2 .add_remove {
+  display: inline-block;
+  white-space: normal;
+  border: 1px solid #063c0e;
 }
 #section2 .elem {
   list-style: none;
   display: inline-block;
   position: relative;
-  left: 25rem;
-  top: 15rem;
-  font-size: 20px;
-  color: rgb(48, 98, 10);
-  text-shadow: 1px 0.5px 1px #063c0e;
+  justify-content: flex-start;
+  margin: 0rem 1rem;
+  left: 19.2rem;
+  top: 15.5rem;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  text-shadow: 1px 0.5px 1px #000000;
   cursor: pointer;
 }
 #section2 .add-btn {
