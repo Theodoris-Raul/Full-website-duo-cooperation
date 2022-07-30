@@ -9,6 +9,7 @@ body {
     font-size: $size;    
     padding: $spacing;
     margin: $spacing;
+    background-image: $body_background;
 }
 
 .row {  
@@ -16,18 +17,14 @@ body {
     flex-wrap: wrap;
     height:100vh;
     
-    
-
     .left_side {
         flex: 50%;
-        background-color: #bef7ff;
         padding: 0px;
         .header {
             display: flex;
             width: 100%;
             justify-content:flex-start;
             height: 40px;
-            background: #bef7ff;
             color: rgb(0, 0, 0);
             font-size: 13px;
             border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);           
@@ -152,7 +149,6 @@ body {
 
     .right_side {
         flex: 50%;
-        background-color: #bef7ff;
         padding: 0px;
 
         img {      

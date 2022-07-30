@@ -2,6 +2,7 @@
 /*colors*/
 body {
   font-family: "Poppins", Helvetica, sans-serif;
+  background-image: url(../basketimages/abstract-blue-green.png);
 }
 
 nav {
@@ -84,6 +85,7 @@ nav .fa {
 .basket_row {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   height: 70vh;
   margin-top: 10px;
   margin-bottom: 100px;
