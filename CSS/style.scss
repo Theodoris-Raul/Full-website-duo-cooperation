@@ -140,6 +140,27 @@ body {
     height: 600px;
     width: 100%;
     display: block;
+
+    .scroll-up{
+        margin: auto;
+        display: flex;
+        text-decoration: none;
+        color: #0D900D;
+        cursor: pointer;
+        padding: 5px 8;
+        font-size: 9px;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        border-radius: 50px;
+        border: 2px solid #0D900D;
+        text-shadow: 1px 1px 1px #DAAC24;
+      }
+      
+      .scroll-up i{
+        font-size: 40px;
+      }
+
     .product_cards {
         display: flex;
         justify-content: center;
