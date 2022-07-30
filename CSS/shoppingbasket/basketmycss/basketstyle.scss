@@ -3,7 +3,10 @@
 
 body {
     font-family: $fonts;
-    background-image: url(../basketimages/abstract-blue-green.png);
+    background-image: $bg_image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
@@ -96,7 +99,10 @@ nav .fa{
     
     .basket_left_side {
         flex: 70%;
-        background-color: #ece8ab;
+        background-image: $left_side_bg_image;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 10px;
 
         .box_elements {

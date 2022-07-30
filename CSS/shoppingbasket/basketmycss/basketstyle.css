@@ -3,6 +3,9 @@
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   background-image: url(../basketimages/abstract-blue-green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
@@ -94,7 +97,10 @@ nav .fa {
 }
 .basket_row .basket_left_side {
   flex: 70%;
-  background-color: #ece8ab;
+  background-image: url(../basketimages/left-side-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
 }
 .basket_row .basket_left_side .box_elements {
