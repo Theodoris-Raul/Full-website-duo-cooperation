@@ -3,6 +3,10 @@
 
 body {
     font-family: $fonts;
+    background-image: $bg_image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
@@ -85,6 +89,7 @@ nav .fa{
 .basket_row {  
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     height:70vh;
     margin-top: 10px;
     margin-bottom: 100px;
@@ -94,7 +99,10 @@ nav .fa{
     
     .basket_left_side {
         flex: 70%;
-        background-color: #1e4cca;
+        background-image: $left_side_bg_image;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 10px;
 
         .box_elements {
@@ -128,7 +136,16 @@ nav .fa{
                 border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 
                 .products_li {
-                    margin-right: 30vh;
+                    margin-right: 26vh;
+                }
+
+                .price_header {
+                    margin-right: 17vh;
+                }
+
+                .after_products_li {
+                    margin-left: 10vh;
+                    position: absolute;
                 }
             }
 
@@ -144,16 +161,17 @@ nav .fa{
 
                 img {
                     width:70px;
+                    margin-right: 25vh;
                     
                 }
                 
                 .after_img_li {
-                    margin-left: -15vh;
+                    margin-left: 10vh;
+                    position: absolute;
                 }
 
                 .remaining_li {
-                    display: flex;
-                    row-gap: -10vh;
+                    padding: 0;
                 }
                 
             }
@@ -162,7 +180,7 @@ nav .fa{
 
     .basket_right_side {
         flex: 28%;
-        background-color: #f5980d;
+        background-color: #c08a38;
         border-radius: 10px;
     }
 }

@@ -40,6 +40,10 @@ body {
   font-size: 1.3rem;
   padding: 0px;
   margin: 0px;
+  background-image: url(../images/body-background-light-green-blue.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .row {
@@ -49,7 +53,6 @@ body {
 }
 .row .left_side {
   flex: 50%;
-  background-color: #bef7ff;
   padding: 0px;
 }
 .row .left_side .header {
@@ -57,7 +60,6 @@ body {
   width: 100%;
   justify-content: flex-start;
   height: 40px;
-  background: #bef7ff;
   color: rgb(0, 0, 0);
   font-size: 13px;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
@@ -168,7 +170,6 @@ body {
 }
 .row .right_side {
   flex: 50%;
-  background-color: #bef7ff;
   padding: 0px;
 }
 .row .right_side img {

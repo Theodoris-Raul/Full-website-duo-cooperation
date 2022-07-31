@@ -9,6 +9,10 @@ body {
     font-size: $size;    
     padding: $spacing;
     margin: $spacing;
+    background-image: $body_login_bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .row {  
@@ -16,18 +20,14 @@ body {
     flex-wrap: wrap;
     height:100vh;
     
-    
-
     .left_side {
         flex: 50%;
-        background-color: #bef7ff;
         padding: 0px;
         .header {
             display: flex;
             width: 100%;
             justify-content:flex-start;
             height: 40px;
-            background: #bef7ff;
             color: rgb(0, 0, 0);
             font-size: 13px;
             border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);           
@@ -152,17 +152,15 @@ body {
 
     .right_side {
         flex: 50%;
-        background-color: #bef7ff;
         padding: 0px;
 
-        img {      
+        img {
             display: block;
             position: relative;                        
             width: 89.6%;
             height:auto;
             top: 50%;
-            transform: translate(-0%, -50%);
-            
+            transform: translate(-0%, -50%);           
             border: 3px solid black;
             border-radius: 10px;            
         }
