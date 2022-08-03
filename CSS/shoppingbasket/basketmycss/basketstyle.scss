@@ -1,5 +1,6 @@
 /* file import */
 @import 'basketvariables';
+@import 'basketmixins';
 
 body {
     font-family: $fonts;
@@ -103,7 +104,9 @@ nav .fa{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgb(117, 79, 30);
+        border-right: 2px solid rgb(117, 79, 30);
+        @include border-radius(0.5rem);
 
         .box_elements {
             display: flex;
@@ -181,6 +184,8 @@ nav .fa{
     .basket_right_side {
         flex: 28%;
         background-color: #c08a38;
-        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
+        border-left: 2px solid rgb(61, 43, 19);
+        @include border-radius(0.5rem);
     }
 }
