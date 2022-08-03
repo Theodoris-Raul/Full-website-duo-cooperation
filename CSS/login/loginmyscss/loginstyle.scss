@@ -162,7 +162,9 @@ body {
             top: 53%;
             left: 50%;
             transform: translate(-50%, -47%);           
-            border: 3px solid black;
+            box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
+            border-left: 2px solid rgb(61, 43, 19);
+            @include border-radius(0.5rem);
             border-radius: 15px;            
         }
 
@@ -174,7 +176,9 @@ body {
                 top: 55%;
                 left: 50%;
                 transform: translate(-50%, -45%);           
-                border: 3px solid black;
+                box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
+                border-left: 2px solid rgb(61, 43, 19);
+                @include border-radius(0.5rem);
                 border-radius: 15px;            
             }
         }
