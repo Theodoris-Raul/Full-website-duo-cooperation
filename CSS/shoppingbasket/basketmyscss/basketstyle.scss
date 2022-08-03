@@ -88,15 +88,7 @@ nav .fa{
 }
 
 .basket_row {  
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    height:70vh;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
-    
+    @include row_container;
     
     .basket_left_side {
         flex: 70%;
@@ -108,35 +100,15 @@ nav .fa{
         border-right: 2px solid rgb(117, 79, 30);
         @include border-radius(0.5rem);
 
-        .box_elements {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);               
-            justify-content: flex-start;
-            height: fit-content;
-            background: transparent;
-            color: rgb(0, 0, 0);
-            font-size: 18px;
-            padding: 10px;
+        .left_box_elements {
+            @include box_elements;
 
             header {
-                margin-top: auto;
-                margin-bottom: 20px;
-                font-size: 30px;
-                font-weight: 800;
+                @include header_element;
             }
 
             .ul_1 {
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                padding: 20px;
-                font-size: 15px;
-                font-weight: bold;
-                border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+                @include ul_element;
 
                 .products_li {
                     margin-right: 26vh;
@@ -153,14 +125,8 @@ nav .fa{
             }
 
             .ul_2 {
-                display: flex;
-                justify-content: space-between;
+                @extend .ul_1;
                 align-items: center;
-                list-style: none;
-                padding: 20px;
-                font-size: 15px;
-                font-weight: bold;
-                border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
 
                 img {
                     width:70px;
@@ -176,7 +142,6 @@ nav .fa{
                 .remaining_li {
                     padding: 0;
                 }
-                
             }
         }
     }
@@ -187,5 +152,13 @@ nav .fa{
         box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
         border-left: 2px solid rgb(61, 43, 19);
         @include border-radius(0.5rem);
+
+        .right_box_elements {
+            @include box_elements; 
+
+            header {
+                @include header_element;
+            }
+        }
     }
 }
