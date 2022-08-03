@@ -5,13 +5,15 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Login Section</title>
-            <link rel="stylesheet" href="loginmycss/loginstyle.css">
+            <link href="http://fonts.cdnfonts.com/css/aloevera" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../loginmycss/loginstyle.css">
       </head>
       <body>
             <div class="row">
                 <div class="left_side">
                     <div class="header">
-                        <a href="../home.html"><img src="../images/Logo-Vera-Aloe.png"></a>
+                        <a href="../../home.html"><img src="../../images/Logo-Vera-Aloe.png"></a>
                     </div>
                     <div class="container_box">
                         <div class="box_elements">
@@ -34,7 +36,25 @@
                     
                 </div>
                 <div class="right_side">
-                    <img src="images/recover-aloe-vera.jpg">
+                    <div>
+                        <nav>
+                            <div class="nav-links" id="navLinks">
+                                <i class="fa fa-times" onclick="hideMenu()"></i>
+                                    <ul>
+                                        <li class='pr'><a href="">Products</a></li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <a href="../../shoppingbasket/basketmyhtml/basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                                        <a href="login.html"><i class="fa fa-user"></i></a>
+                                    </ul>
+                                <i class="fa fa-bars" onclick="showMenu()"></i>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="recover_img">
+                        <img src="../images/recover-aloe-vera.jpg">
+                    </div>
                 </div>
 
       </body>
