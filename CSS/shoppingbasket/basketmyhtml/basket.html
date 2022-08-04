@@ -48,6 +48,7 @@
                             <li><img src="../../images/aloe-01.jpg"></li>
                             <li class="after_img_li">Aloe Max</li>
                             <li class="remaining_li">Size</li>
+                            <li>Behehe</li>
                             <li class="remaining_li">Quantity</li>
                             <li class="remaining_li">Total Price</li>
                             <li class="remaining_li">X</li>
@@ -75,8 +76,41 @@
                 <div class="right_box_elements">
                     <div>
                         <header>
-                            Payment
+                            Payment Section
                         </header>
+                        <div>
+                            Payment method
+                            <ul class="ul_3">
+                                <li class="creditcard_box"><button type="submit"><i class="fa_c_icon fa fa-brands fa-credit-card"></i><span class="c_logo">Credit Card</span></button></li>
+                                <li class="paypal_box"><button type="submit"><i class="fa_p_icon fa fa-brands fa-paypal"></i><span class="p_logo">PayPal</span></button></li>
+                            </ul>
+                            <div class="input_section">
+                                <label for="cardname">Card Name</label>
+                                <input type="text" id="cardname" placeholder="Νίκος Καρδιβούρκος" name="cardname" required>
+                            </div>
+                            <div class="input_section">
+                                <label for="cardnumber">Card Number</label>
+                                <input type="password" id="cardnumber" placeholder="**** **** **** ****" name="cardnumber" required>
+                            </div>
+                            <div class="flex_row_container">
+                                <div class="input_section2">
+                                    <label for="expdate">Expiration Date</label>
+                                    <div>
+                                        <input type="text" id="expdate" placeholder="MM" name="expdate" required>
+                                        <input type="text" id="expdate" placeholder="YYYY" name="expdate" required>
+                                    </div>
+                                </div>
+                                <div class="input_section3">
+                                    <label for="cvv">CVV</label>
+                                    <div>
+                                        <input type="text" id="cvv" placeholder="XXX" name="cvv" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="checkout_btn" type="submit">Check Out</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 

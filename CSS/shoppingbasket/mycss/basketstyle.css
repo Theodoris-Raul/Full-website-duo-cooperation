@@ -124,6 +124,7 @@ nav .fa {
 .basket_row .basket_left_side .left_box_elements header {
   margin-top: auto;
   margin-bottom: 20px;
+  text-align: center;
   font-size: 30px;
   font-weight: 800;
 }
@@ -185,6 +186,123 @@ nav .fa {
 .basket_row .basket_right_side .right_box_elements header {
   margin-top: auto;
   margin-bottom: 20px;
+  text-align: center;
   font-size: 30px;
   font-weight: 800;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+}
+.basket_row .basket_right_side .right_box_elements div {
+  text-align: center;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+  font-size: 15px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+  justify-content: space-evenly;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 .paypal_box .fa_p_icon {
+  font-size: 23px;
+  padding-right: 5px;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 .paypal_box .p_logo {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 .paypal_box button {
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.253);
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 .creditcard_box .fa_c_icon {
+  font-size: 23px;
+  padding-right: 5px;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 .creditcard_box .c_logo {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 13px;
+}
+.basket_row .basket_right_side .right_box_elements .ul_3 .creditcard_box button {
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.253);
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+.basket_row .basket_right_side .right_box_elements .input_section, .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section3, .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);
+}
+.basket_row .basket_right_side .right_box_elements .input_section input[type=text], .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section3 input[type=text], .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section2 input[type=text], .basket_row .basket_right_side .right_box_elements .input_section [type=password], .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section3 [type=password], .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section2 [type=password] {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 200px;
+  border: 2px solid rgb(39, 16, 44);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.basket_row .basket_right_side .right_box_elements .flex_row_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.basket_row .basket_right_side .right_box_elements .flex_row_container .input_section2 input[type=text] {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 200px;
+  border: 2px solid rgb(39, 16, 44);
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 70px;
+}
+.basket_row .basket_right_side .right_box_elements .flex_row_container .input_section3 input[type=text] {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 200px;
+  border: 2px solid rgb(39, 16, 44);
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 70px;
+}
+.basket_row .basket_right_side .right_box_elements .checkout_btn {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.253);
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  border: 2px solid rgb(39, 16, 44);
+  background-color: white;
+  color: black;
+  font-family: "Aloevera", sans-serif;
 }/*# sourceMappingURL=basketstyle.css.map */
