@@ -104,7 +104,7 @@ body {
 }
 #section1 .nav-links ul li a:hover {
   color: rgb(201, 145, 22);
-  font-size: 20px;
+  font-size: 19px;
   transition: 0.4s;
   display: inline;
 }
@@ -138,7 +138,7 @@ body {
   text-decoration: none;
   background-color: rgb(48, 98, 10);
   border-radius: 100px;
-  font-size: 21px;
+  font-size: 20px;
   transition: 0.1s;
   display: inline-block;
 }

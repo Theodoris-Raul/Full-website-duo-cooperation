@@ -25,79 +25,82 @@ body {
   width: 100%;
   display: block;
 
-  nav{
-      display: flex;
-      padding: 0.5% 9%;
-      justify-content: space-between;
-  }
+    nav{
+        display: flex;
+        padding: 0.5% 9%;
+        justify-content: space-between;
 
-  nav img {
-      width: 160px;
-  }
+        img {
+        width: 160px;
+        }
 
-  .nav-links{
-      flex: 1;
-      text-align: right;
-  }
+        .nav-links{
+            flex: 1;
+            text-align: right;
 
-  .nav-links ul li{
-      list-style: none;
-      display: inline-block;
-      padding: 10px 45px;
-      position: relative;
-  }
+            ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px 45px;
+            position: relative;
+            
 
-  .nav-links ul li a{
-      color: $nav_links_col;
-      text-decoration: none;
-      font-size: 18px;
-  }
+                a{
+                    color: $nav_links_col;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
 
-  .nav-links ul li a:hover{
-      color: $nav_links_overline_col;
-      font-size: 18px;
-      transition: 0.4s;
-      display: inline;
-    }
+                a:hover{
+                    color: $nav_links_overline_col;
+                    font-size: 18px;
+                    transition: 0.4s;
+                    display: inline;
+                }
 
-  nav .fa{
-      display: none;
-  }
-  
-  .nav-links ul li::after{
-      content: '';
-      width: 0%;
-      height: 1.5px;
-      background: $nav_links_overline_col;
-      display: block;
-      margin: 5px 0px;
-      transition: 0.5s;
-  }
+                ::after{
+                    content: '';
+                    width: 0%;
+                    height: 1.5px;
+                    background: $nav_links_overline_col;
+                    display: block;
+                    margin: 5px 0px;
+                    transition: 0.5s;
+                }
+        
+                :hover::after{
+                    width: 101%;
+                    background: $nav_links_col;
+                }
 
-  .nav-links ul li:hover::after{
-      width: 101%;
-      background: $nav_links_col;
-  }
+            }
+        
+            ul i{
+                list-style: none;
+                display: inline-block;
+                padding: 4px 20px;
+                position: relative;
+                color: $nav_links_col;
+                font-size: 20px;
+                cursor: pointer;
+        
+                :hover{
+                    color: $nav_links_overline_col;
+                    text-decoration: none;
+                    background-color: $nav_links_col;
+                    border-radius: 100px;
+                    font-size: 20px;
+                    transition: 0.7s;
+                    display: inline-block;
+                }
+            }
+        }
 
-  .nav-links ul i{
-      list-style: none;
-      display: inline-block;
-      padding: 4px 20px;
-      position: relative;
-      color: $nav_links_col;
-      font-size: 20px;
-      cursor: pointer;
-  }
-
-  .nav-links ul i:hover{
-      color: $nav_links_overline_col;
-      text-decoration: none;
-      background-color: $nav_links_col;
-      border-radius: 100px;
-      font-size: 20px;
-      transition: 0.7s;
-      display: inline-block;
-  }
+        .fa {
+            display: none;
+        }
+    }   
+        
 }
 
 #section2 {
@@ -163,6 +166,10 @@ body {
             white-space: normal;
             border: 1px solid #063c0e;
         }
+
+            .total_quantity {
+                width: 15px;
+            }
 
             .elem {
                 list-style: none;
