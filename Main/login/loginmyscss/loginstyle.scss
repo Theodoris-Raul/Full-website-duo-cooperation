@@ -1,0 +1,257 @@
+
+/* file import */
+@import 'loginvariables';
+@import 'loginmixins';
+@import 'logincard';
+   
+body {
+    font-family: $fonts;
+    font-size: $size;    
+    padding: $spacing;
+    margin: $spacing;
+    background-image: $body_login_bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    height:100vh;
+    
+    .left_side {
+        flex: 50%;
+        padding-top: 0px;
+        .header {
+            display: flex;
+            width: 100%;
+            justify-content:flex-start;
+            height: 40px;
+            color: rgb(0, 0, 0);
+            font-size: 17px;
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.315);           
+        
+            h1 {
+                margin-top: 5px;
+                margin-left: 10px;
+            }
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .container_box {  
+            display: block;          
+            position: relative;
+            padding: 150px;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -40%);
+
+            .box_elements {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);               
+                justify-content: flex-start;
+                height: fit-content;
+                background: transparent;
+                color: rgb(0, 0, 0);
+                font-size: 21px;
+                font-weight: 100;
+                padding: 10px;
+            }           
+        }
+        
+        .input_section {
+            display:flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center;
+
+            input[type=text], [type=email], [type=password] {          
+                padding: 12px 20px;
+                margin: 8px 0;
+                width: 50%;
+                border: 2px solid rgb(39, 16, 44);
+                box-sizing: border-box;
+                border-radius: 15px;
+            }
+        }
+
+        button:hover {
+            opacity: 0.8;
+            color: rgb(255, 255, 255);
+            background: rgba(0, 0, 0, 0.774);
+            border-color: rgb(0, 0, 0);
+        }
+
+        button {
+            cursor: pointer;
+            padding: 7px 10px;
+            border-radius: 15px;
+            border: 2px solid rgb(105, 29, 86);
+            background: #c448bd;
+            color: rgb(255, 255, 255);
+            font-size: 17px;             
+        }
+        .create_acc_btn {
+            display: block;
+            float: right;
+            margin-top: 10px;
+        }
+
+        .psword {
+            display: block;
+            float: right;
+            margin-top: 20px;            
+            font-size: 15px;
+            font-weight: lighter;
+            text-decoration: none;
+            color: #541364;            
+        }
+
+        .back_to_login {
+            display: block;
+            text-align: center;
+            margin-top: 35px;           
+            font-size: 15px;
+            font-weight: lighter;
+            text-decoration: none;
+            color: #541364;  
+        }
+        
+        .single_line {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            border-bottom: 2px solid rgba(39, 16, 44, 0.425);
+        }
+
+        .last_box_element {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color:rgb(0, 0, 0);
+            a {
+                padding: 7px 10px;
+                text-decoration: none;
+                box-sizing: border-box;
+                border-radius: 20px;
+                border: 2px solid #541364;
+                background: #541364;
+                color: white;
+            }
+        }
+    }
+
+    .right_side {
+        flex: 50%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            display: block;
+            position: relative;                        
+            max-block-size: 70vh;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -47%);           
+            box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
+            border-left: 2px solid rgb(61, 43, 19);
+            @include border-radius(0.5rem);
+            border-radius: 15px;            
+        }
+
+        .recover_img {
+            img {
+                display: block;
+                position: relative;                        
+                width: 90%;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -45%);           
+                box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
+                border-left: 2px solid rgb(61, 43, 19);
+                @include border-radius(0.5rem);
+                border-radius: 15px;            
+            }
+        }
+
+        nav{
+            display: flex;
+            padding: 0.5% 9%;
+            justify-content: space-between;
+        }
+        
+        .nav-links{
+            flex: 1;
+            text-align: right;
+            justify-content: space-between;
+        }
+        
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px 35px;
+            position: relative;
+        }
+        
+        .nav-links ul li a{
+            color: $nav_links_col;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .nav-links ul li a:hover{
+            color: $nav_links_overline_col;
+            font-size: 18px;
+            transition: 0.4s;
+            display: inline;
+          }
+        
+        nav .fa{
+            display: none;
+        }
+        
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 1.5px;
+            background: $nav_links_overline_col;
+            display: block;
+            margin: 5px 0px;
+            transition: 0.5s;
+        }
+        
+        .nav-links ul li:hover::after{
+            width: 101%;
+            background: $nav_links_col;
+        }
+        
+        .nav-links ul i{
+            list-style: none;
+            display: inline-block;
+            padding: 4px 20px;
+            position: relative;
+            color: $nav_links_col;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .nav-links ul i:hover{
+            color: $nav_links_overline_col;
+            text-decoration: none;
+            background-color: #159615;
+            border-radius: 100px;
+            font-size: 20px;
+            transition: 0.7s;
+            display: inline-block;
+        }
+    }
+}

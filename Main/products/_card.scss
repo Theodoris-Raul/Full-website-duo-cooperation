@@ -1,0 +1,27 @@
+.card {
+
+    @include border-radius(0.5rem); /* using the mixins function */
+
+    img {
+        width: 300px;
+        border: 1px solid rgb(32, 95, 9);
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 30px;
+    }
+
+    .card_title {
+        margin: 0;
+        color: $card_title_col
+    }
+
+    .card_description {
+        text-align: center;
+        border: 1px;
+        margin: 0 0 1 0;
+        position: relative;
+        color: $card_description_col;
+        background-position: center center;
+    }
+}
