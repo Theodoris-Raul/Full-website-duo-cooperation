@@ -8,11 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    height:70vh;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
+    height:50vh;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 @mixin box_elements {
@@ -25,7 +25,9 @@
     justify-content: flex-start;
     height: fit-content;
     background: transparent;
-    color: rgb(0, 0, 0);
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
     font-size: 18px;
     padding: 10px;   
 }
@@ -53,7 +55,7 @@
     border-radius: 25px;
     border: 2px solid rgba(0, 0, 0, 0.253);
     background: transparent;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 17px;
 }
 

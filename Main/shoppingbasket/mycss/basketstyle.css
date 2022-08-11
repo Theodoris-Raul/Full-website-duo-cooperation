@@ -2,10 +2,7 @@
 /*colors*/
 body {
   font-family: "Aloevera", sans-serif;
-  background-image: url(../basketimages/abstract-blue-green.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(204, 255, 241, 0.6039215686);
 }
 
 nav {
@@ -89,21 +86,14 @@ nav .fa {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  height: 70vh;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
+  height: 50vh;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 .basket_row .basket_left_side {
   flex: 70%;
-  background-image: url(../basketimages/left-side-background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 5px 5px 5px 5px rgb(117, 79, 30);
-  border-right: 2px solid rgb(117, 79, 30);
-  border-radius: 0.5rem;
 }
 .basket_row .basket_left_side .left_box_elements {
   display: flex;
@@ -117,7 +107,9 @@ nav .fa {
   height: -moz-fit-content;
   height: fit-content;
   background: transparent;
-  color: rgb(0, 0, 0);
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
   font-size: 18px;
   padding: 10px;
 }
@@ -162,9 +154,9 @@ nav .fa {
 }
 .basket_row .basket_right_side {
   flex: 28%;
-  background-color: #c08a38;
-  box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
-  border-left: 2px solid rgb(61, 43, 19);
+  background-color: rgba(255, 243, 191, 0.6862745098);
+  box-shadow: 5px 5px 5px 5px rgba(255, 217, 0, 0.685);
+  border-left: 2px solid rgba(255, 217, 0, 0.712);
   border-radius: 0.5rem;
 }
 .basket_row .basket_right_side .right_box_elements {
@@ -179,7 +171,9 @@ nav .fa {
   height: -moz-fit-content;
   height: fit-content;
   background: transparent;
-  color: rgb(0, 0, 0);
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
   font-size: 18px;
   padding: 10px;
 }
@@ -220,7 +214,7 @@ nav .fa {
   border-radius: 25px;
   border: 2px solid rgba(0, 0, 0, 0.253);
   background: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 17px;
 }
 .basket_row .basket_right_side .right_box_elements .ul_3 .creditcard_box .fa_c_icon {
@@ -237,7 +231,7 @@ nav .fa {
   border-radius: 25px;
   border: 2px solid rgba(0, 0, 0, 0.253);
   background: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 17px;
 }
 .basket_row .basket_right_side .right_box_elements .input_section, .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section3, .basket_row .basket_right_side .right_box_elements .flex_row_container .input_section2 {
@@ -299,7 +293,7 @@ nav .fa {
   border-radius: 25px;
   border: 2px solid rgba(0, 0, 0, 0.253);
   background: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 17px;
   border: 2px solid rgb(39, 16, 44);
   background-color: white;

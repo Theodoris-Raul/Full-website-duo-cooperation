@@ -4,10 +4,7 @@
 
 body {
     font-family: $fonts;
-    background-image: $bg_image;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #ccfff19a;
 }
 
 nav{
@@ -92,13 +89,8 @@ nav .fa{
     
     .basket_left_side {
         flex: 70%;
-        background-image: $left_side_bg_image;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: 5px 5px 5px 5px rgb(117, 79, 30);
-        border-right: 2px solid rgb(117, 79, 30);
-        @include border-radius(0.5rem);
+        
+        
 
         .left_box_elements {
             @include box_elements;
@@ -147,9 +139,9 @@ nav .fa{
 
     .basket_right_side {
         flex: 28%;
-        background-color: #c08a38;
-        box-shadow: 5px 5px 5px 5px rgb(61, 43, 19);
-        border-left: 2px solid rgb(61, 43, 19);
+        background-color: #fff3bfaf;
+        box-shadow: 5px 5px 5px 5px rgba(255, 217, 0, 0.685);
+        border-left: 2px solid rgba(255, 217, 0, 0.712);
         @include border-radius(0.5rem);
 
         .right_box_elements {
