@@ -96,19 +96,23 @@ body {
   font-weight: 100;
   padding: 10px;
 }
-.row .left_side .input_section {
+.row .left_side .input_section, .row .left_side .submit_section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.row .left_side .input_section input[type=text], .row .left_side .input_section [type=email], .row .left_side .input_section [type=password] {
+.row .left_side .input_section input[type=text], .row .left_side .submit_section input[type=text], .row .left_side .input_section [type=email], .row .left_side .submit_section [type=email], .row .left_side .input_section [type=password], .row .left_side .submit_section [type=password] {
   padding: 12px 20px;
   margin: 8px 0;
   width: 50%;
   border: 2px solid rgb(39, 16, 44);
   box-sizing: border-box;
   border-radius: 15px;
+}
+.row .left_side .submit_section {
+  margin-top: 20px;
+  font-size: 15px;
 }
 .row .left_side button:hover {
   opacity: 0.8;
@@ -133,7 +137,6 @@ body {
 .row .left_side .psword {
   display: block;
   float: right;
-  margin-top: 20px;
   font-size: 15px;
   font-weight: lighter;
   text-decoration: none;

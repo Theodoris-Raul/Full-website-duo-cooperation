@@ -83,6 +83,12 @@ body {
             }
         }
 
+        .submit_section {
+            @extend .input_section;           
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
         button:hover {
             opacity: 0.8;
             color: rgb(255, 255, 255);
@@ -107,8 +113,7 @@ body {
 
         .psword {
             display: block;
-            float: right;
-            margin-top: 20px;            
+            float: right;            
             font-size: 15px;
             font-weight: lighter;
             text-decoration: none;

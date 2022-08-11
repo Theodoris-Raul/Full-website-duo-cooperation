@@ -20,23 +20,25 @@
                         <h2>Log in</h2>
                         <h6>Welcome to Camel Cloud, please put your login credentials below to </br>
                             start using the app</h6>
-                        <div class="input_section">
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email" placeholder="Enter email" name="email" required>
-                        </div>
-                        <div class="input_section">
-                            <label for="psw">Password</label>
-                            <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
-                        </div>
+                        <form action="login.html" method="post">
+                            <div class="input_section">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" placeholder="Enter email" name="email" required>
+                            </div>
+                            <div class="input_section">
+                                <label for="psw">Password</label>
+                                <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+                            </div>
+                            <div class="submit_section">
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember">Remember me
+                                </label>
+                                <button type="submit" value="Login" onclick="validate()">Log in</button>
+                            </div>
+                        </form>                        
+                        <div class="single_line"></div>
                         <div>
                             <a class="psword" href="recoverpass.html">Forgot Password?</a>
-                        </div>
-                        <div class="single_line"></div>
-                        <div class="input_section">
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember">Remember me
-                            </label>
-                            <button type="submit">Log in</button>
                         </div>
                         <div class="last_box_element">
                             Don't have an account? <span><a href="create.html">Sign Up</a></span>
@@ -68,6 +70,8 @@
                 
             </div>
         </div>
+
+        <script src="../myjs/login.js"></script>
     </body>
 </html>
                         
