@@ -5,7 +5,7 @@
 @import 'logincard';
    
 body {
-    font-family: $fonts;
+    font-family:'Times New Roman', Times, serif;
     font-size: $size;    
     padding: $spacing;
     margin: $spacing;
@@ -189,6 +189,7 @@ body {
         }
 
         nav{
+            font-family: $fonts;
             display: flex;
             padding: 0.5% 9%;
             justify-content: space-between;

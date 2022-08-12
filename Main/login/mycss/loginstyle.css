@@ -36,7 +36,7 @@
 }
 
 body {
-  font-family: "Aloevera", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.3rem;
   padding: 0px;
   margin: 0px;
@@ -203,6 +203,7 @@ body {
   border-radius: 15px;
 }
 .row .right_side nav {
+  font-family: "Aloevera", sans-serif;
   display: flex;
   padding: 0.5% 9%;
   justify-content: space-between;
