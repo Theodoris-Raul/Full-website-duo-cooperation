@@ -31,7 +31,6 @@ nav img {
   color: rgb(48, 98, 10);
   text-decoration: none;
   font-size: 18px;
-  text-shadow: 1px 0.5px 1px rgb(48, 98, 10);
 }
 
 .nav-links ul li a:hover {
@@ -39,7 +38,6 @@ nav img {
   font-size: 18px;
   transition: 0.4s;
   display: inline;
-  text-shadow: 1px 1px 1px rgb(48, 98, 10);
 }
 
 nav .fa {
@@ -67,7 +65,6 @@ nav .fa {
   padding: 4px 20px;
   position: relative;
   color: rgb(48, 98, 10);
-  text-shadow: 1px 0.5px 1px #7DC61B;
   font-size: 20px;
   cursor: pointer;
 }
