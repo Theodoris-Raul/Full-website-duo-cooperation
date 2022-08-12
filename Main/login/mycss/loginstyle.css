@@ -82,6 +82,24 @@ body {
   opacity: 0;
 }
 
+#password_validation {
+  position: absolute;
+  z-index: 100;
+  left: 40%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  color: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 15px;
+  background-color: #ffffff;
+  opacity: 0;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
