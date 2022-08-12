@@ -212,10 +212,10 @@ body {
 
     .right_side {
         flex: 50%;
+        z-index: -1;
         padding: 0px;
         display: flex;
         flex-direction: column;
-        z-index: -1;
 
         img {
             display: block;
