@@ -55,13 +55,30 @@ body {
   width: 15%;
   text-align: center;
   margin: 0;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
+  padding: 15px;
+  font-size: 15px;
   color: #8a0000;
   border: 1.5px solid #8a0000;
   border-radius: 15px;
   background-color: #e58f8f;
+  opacity: 0;
+}
+
+#login-success-msg {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  font-size: 15px;
+  color: #108a00;
+  border: 1.5px solid #108a00;
+  border-radius: 15px;
+  background-color: #f1f5ee;
   opacity: 0;
 }
 
