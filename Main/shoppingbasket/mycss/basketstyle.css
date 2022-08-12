@@ -151,9 +151,9 @@ nav .fa {
 }
 .basket_row .basket_right_side {
   flex: 28%;
-  background-color: rgba(255, 243, 191, 0.6862745098);
-  box-shadow: 5px 5px 5px 5px rgba(255, 217, 0, 0.685);
-  border-left: 2px solid rgba(255, 217, 0, 0.712);
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  box-shadow: 5px 5px 5px 5px rgba(129, 146, 145, 0.685);
+  border-left: 2px solid rgba(129, 146, 145, 0.685);
   border-radius: 0.5rem;
 }
 .basket_row .basket_right_side .right_box_elements {
