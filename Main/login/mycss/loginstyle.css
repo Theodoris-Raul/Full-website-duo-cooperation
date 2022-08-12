@@ -46,6 +46,25 @@ body {
   background-size: cover;
 }
 
+#login-error-msg {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1.5px solid #8a0000;
+  border-radius: 15px;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -177,6 +196,7 @@ body {
   padding: 0px;
   display: flex;
   flex-direction: column;
+  z-index: -1;
 }
 .row .right_side img {
   display: block;

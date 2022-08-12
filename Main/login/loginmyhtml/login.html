@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div id="login-error-msg">
+            Invalid emal and/or password.</br>
+            Please, try again.
+        </div>
         <div class="row">
             <div class="left_side">
                 <div class="header">
@@ -33,7 +37,7 @@
                                 <label>
                                     <input type="checkbox" checked="checked" name="remember">Remember me
                                 </label>
-                                <button type="submit" value="Login" onclick="validate()">Log in</button>
+                                <button type="submit" id="login_button" value="Login">Log in</button>
                             </div>
                         </form>                        
                         <div class="single_line"></div>
