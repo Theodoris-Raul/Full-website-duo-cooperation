@@ -21,16 +21,16 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 15%;
+    width: 10%;
     text-align: center;
     margin: 0;
     padding: 15px;
     font-size: 15px;
     color: #8a0000;
     border: 1.5px solid #8a0000;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #e58f8f;
-    opacity: 0;
+    display: none;
 }
 
 #login-success-msg {
@@ -39,19 +39,36 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 15%;
+    width: 10%;
     text-align: center;
     margin: 0;
     padding: 15px;
     font-size: 15px;
     color: #108a00;
     border: 1.5px solid #108a00;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #f1f5ee;
-    opacity: 0;
+    display: none;
 }
 
 #password_validation {
+    position: absolute;
+    z-index: 100;
+    left: 41%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    display: none;
+}
+
+#required_psw {
     position: absolute;
     z-index: 100;
     left: 40%;
@@ -63,10 +80,14 @@ body {
     padding: 5px;
     font-size: 15px;
     color: #000000;
-    border: 1.5px solid #000000;
-    border-radius: 15px;
+    border: 1px solid #000000;
     background-color: #ffffff;
-    opacity: 0;
+    display: none;
+}
+
+#required_email {
+    @extend #required_psw;
+        top: 47%;
 }
 
 .row {  
@@ -212,7 +233,6 @@ body {
 
     .right_side {
         flex: 50%;
-        z-index: -1;
         padding: 0px;
         display: flex;
         flex-direction: column;

@@ -8,6 +8,7 @@
         <link href="http://fonts.cdnfonts.com/css/aloevera" rel="stylesheet">
         <link rel="stylesheet" href="../mycss/loginstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <div id="login-error-msg">
@@ -22,6 +23,12 @@
             at least one numeric digit</br>
             and a special character.
         </div>
+        <div id="required_email">
+            *Please fill out this field*
+        </div>
+        <div id="required_psw">
+            *Please fill out this field*
+        </div>
         <div class="row">
             <div class="left_side">
                 <div class="header">
@@ -35,11 +42,11 @@
                         <form action="login.html" method="post">
                             <div class="input_section">
                                 <label for="email">E-mail</label>
-                                <input type="text" id="email" placeholder="example@email.com" name="email" required="Behehe">
+                                <input type="text" id="email" placeholder="example@email.com" name="email">
                             </div>
                             <div class="input_section">
                                 <label for="psw">Password</label>
-                                <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+                                <input type="password" id="psw" placeholder="Enter Password" name="psw">
                             </div>
                             <div class="submit_section">
                                 <label>
