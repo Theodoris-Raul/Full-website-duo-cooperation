@@ -11,8 +11,7 @@ loginButton.addEventListener("click", (e) => {
     if (email.value.match(regEx) && password.value.match(regEx2)) {
         $(document).ready(function(){
             $("#login-success-msg").show();
-            setTimeout(function() { $("#login-success-msg").hide(); }, 2000);
-            
+            setTimeout(function() { $("#login-success-msg").hide(); }, 2000);            
         })
     }
     else if (email.value.length == 0) {
@@ -30,8 +29,7 @@ loginButton.addEventListener("click", (e) => {
     else {
         $(document).ready(function(){
             $("#login-error-msg").show();
-            setTimeout(function() { $("#login-error-msg").hide(); }, 2000);
-            
+            setTimeout(function() { $("#login-error-msg").hide(); }, 2000);           
         })
     }    
 })
