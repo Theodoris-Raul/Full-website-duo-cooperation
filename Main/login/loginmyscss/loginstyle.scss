@@ -69,25 +69,21 @@ body {
 }
 
 #required_psw {
-    position: absolute;
-    z-index: 100;
-    left: 40%;
-    top: 53%;
-    transform: translate(-50%, -50%);
-    width: 10%;
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-    font-size: 15px;
-    color: #000000;
-    border: 1px solid #000000;
-    background-color: #ffffff;
-    display: none;
+    @include required;
+        top: 51.8%;
 }
 
 #required_email {
-    @extend #required_psw;
+    @include required;
         top: 47%;
+}
+
+#required_fields {
+    @include required;
+}
+
+#matching_passwords {
+    @include required;
 }
 
 .row {  

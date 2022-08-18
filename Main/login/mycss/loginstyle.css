@@ -99,11 +99,47 @@ body {
   display: none;
 }
 
-#required_psw, #required_email {
+#required_psw {
   position: absolute;
   z-index: 100;
-  left: 40%;
-  top: 53%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  display: none;
+  top: 51.8%;
+}
+
+#required_email {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  display: none;
+  top: 47%;
+}
+
+#required_fields {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 10%;
   text-align: center;
@@ -116,8 +152,21 @@ body {
   display: none;
 }
 
-#required_email {
-  top: 47%;
+#matching_passwords {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  display: none;
 }
 
 .row {

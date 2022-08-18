@@ -11,17 +11,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <div id="required_username">
-            *Please fill out this field*
-        </div>
-        <div id="required_email">
-            *Please fill out this field*
-        </div>
-        <div id="required_psw">
-            *Please fill out this field*
-        </div>
-        <div id="required_re_psw">
-            *Please fill out this field*
+        <div id="required_fields">
+            Please, fill out all the (*) fields.
         </div>
         <div id="matching_passwords">
             Your Password repeat is false.
@@ -43,7 +34,7 @@
                         <h2>Create Account</h2>
                         <h6>Get access to exclusive features by creating an account</h6>
                         <div class="input_section">
-                            <label for="uname">Username</label>
+                            <label for="uname">Username*</label>
                             <input type="text" id="uname" placeholder="Enter Username" name="uname">
                         </div>
                         <div class="input_section">
@@ -51,21 +42,21 @@
                             <input type="text" id="compname" placeholder="Enter Company" name="compname">
                         </div>
                         <div class="input_section">
-                            <label for="email">E-mail</label>
+                            <label for="email">E-mail*</label>
                             <input type="text" id="email" placeholder="Enter email" name="email">
                         </div>
                         <div class="input_section">
-                            <label for="psw">Password</label>
+                            <label for="psw">Password*</label>
                             <input type="password" id="psw" placeholder="Enter Password" name="psw">
                         </div>
                         <div class="input_section">
-                            <label for="repsw">Repeat password</label>
+                            <label for="repsw">Repeat password*</label>
                             <input type="password" id="repsw" placeholder="Repeat Password" name="psw">
                         </div>
                         <div class="single_line"></div>
-                        <div class="input_section">
+                        <div class="input_section" id="check_div">
                             <label>
-                                <input type="checkbox" checked="checked" name="terms"> I've read the 
+                                <input type="checkbox" id="terms" name="terms"> I've read the 
                                 <span><a href="#">Terms & Conditions</a></span>
                             </label>
                             

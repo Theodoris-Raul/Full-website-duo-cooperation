@@ -8,30 +8,20 @@ loginButton.addEventListener("click", (e) => {
 
     var regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     var regEx2 = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/
-    if (email.value.match(regEx) && password.value.match(regEx2)) {
-        $(document).ready(function(){
+    $(document).ready(function(){
+        if (email.value.match(regEx) && password.value.match(regEx2)) {
             $("#login-success-msg").show();
             setTimeout(function() { $("#login-success-msg").hide(); }, 2000);            
-        })
-    }
-    else if (email.value.length == 0) {
-        $(document).ready(function(){
-            $("#required_email").show();
-            setTimeout(function() { $("#required_email").hide(); }, 2000);
-        })
-    }
-    else if (password.value.length == 0) {
-        $(document).ready(function(){
-            $("#required_psw").show();
-            setTimeout(function() { $("#required_psw").hide(); }, 2000);
-        })
-    }
-    else {
-        $(document).ready(function(){
+        }
+        else if (email.value.length == 0 || password.value.length == 0) {
+            $("#required_fields").show();
+            setTimeout(function() { $("#required_fields").hide(); }, 2000);
+        }
+        else {
             $("#login-error-msg").show();
             setTimeout(function() { $("#login-error-msg").hide(); }, 2000);           
-        })
-    }    
+        }
+    })    
 })
 
 $(document).ready(function(){
