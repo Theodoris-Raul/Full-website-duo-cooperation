@@ -3,6 +3,7 @@ var email = document.getElementById("email");
 var rePassword = document.getElementById("repsw");
 var username = document.getElementById("uname");
 var password = document.getElementById("psw");
+var terms = document.getElementById("terms");
 
 createButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -32,8 +33,9 @@ createButton.addEventListener("click", (e) => {
             $("#login-error-msg").show();
             setTimeout(function() { $("#login-error-msg").hide(); }, 2000);
         }
-        else if (!($("#terms").is("checked"))) {
+        else if ($("#terms").prop("checked") == false) {
             $("#check_div").css({"border": "2px solid red"})
+            setTimeout(function() { $("#check_div").removeAttr("style"); }, 2000);
         }
         else {
             $("#login-success-msg").show();
