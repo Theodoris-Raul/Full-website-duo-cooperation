@@ -53,12 +53,10 @@
                         <img src="images/aloe-03.jpg" alt="link" width="100%">
 
 
-                        <div class="add_remove">
-
-                              <div class="elem"><i class="fa fa-minus"></i></div>
-                              <div class="elem"><h3 class="num">1</h3></div>
-                              <div class="elem"><i class="fa fa-plus"></i></div> 
-
+                        <div class="counter">
+                              <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                              <input type="text" value="1">
+                              <span class="up"  onClick='increaseCount(event, this)'>+</span>
                         </div>
 
                         
@@ -67,4 +65,6 @@
                   </div>
 
             </div>
+
+            <script src="plus_minus.js"></script>
       </body>
