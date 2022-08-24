@@ -110,7 +110,7 @@ body {
 #section1 nav .nav-links ul i :hover {
   color: rgb(201, 145, 22);
   text-decoration: none;
-  background-color: rgb(48, 98, 10);
+  background-color: #0D900D;
   border-radius: 100px;
   font-size: 20px;
   transition: 0.7s;
