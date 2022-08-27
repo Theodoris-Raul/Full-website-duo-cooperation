@@ -64,28 +64,31 @@ body {
 #section1 nav img {
   width: 160px;
 }
-#section1 nav .nav-links {
+#section1 nav .fa {
+  display: none;
+}
+#section1 .nav-links {
   flex: 1;
   text-align: right;
 }
-#section1 nav .nav-links ul li {
+#section1 .nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 45px;
   position: relative;
 }
-#section1 nav .nav-links ul li a {
+#section1 .nav-links ul li a {
   color: rgb(48, 98, 10);
   text-decoration: none;
   font-size: 18px;
 }
-#section1 nav .nav-links ul li a:hover {
+#section1 .nav-links ul li a:hover {
   color: rgb(201, 145, 22);
   font-size: 18px;
   transition: 0.4s;
   display: inline;
 }
-#section1 nav .nav-links ul li ::after {
+#section1 .nav-links ul li ::after {
   content: "";
   width: 0%;
   height: 1.5px;
@@ -94,11 +97,11 @@ body {
   margin: 5px 0px;
   transition: 0.5s;
 }
-#section1 nav .nav-links ul li :hover::after {
+#section1 .nav-links ul li :hover::after {
   width: 101%;
   background: rgb(48, 98, 10);
 }
-#section1 nav .nav-links ul i {
+#section1 .nav-links ul i {
   list-style: none;
   display: inline-block;
   padding: 4px 20px;
@@ -107,7 +110,7 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-#section1 nav .nav-links ul i :hover {
+#section1 .nav-links ul i:hover {
   color: rgb(201, 145, 22);
   text-decoration: none;
   background-color: #0D900D;
@@ -115,9 +118,6 @@ body {
   font-size: 20px;
   transition: 0.7s;
   display: inline-block;
-}
-#section1 nav .fa {
-  display: none;
 }
 
 #section2 .box_elements {
