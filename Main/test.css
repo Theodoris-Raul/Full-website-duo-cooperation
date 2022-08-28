@@ -27,6 +27,10 @@ h1:before {
     opacity: 0;
 }
 
+h1.zero:before {
+    opacity: 1;
+}
+
 section {
     width: 51%;
     height: 400px;

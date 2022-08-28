@@ -1,16 +1,11 @@
-function increaseCount(a, b) {
-    var input = b.previousElementSibling;
-    var value = parseInt(input.value, 10); 
-    value = isNaN(value)? 0 : value;
-    value ++;
-    input.value = value;
-  }
-  function decreaseCount(a, b) {
-    var input = b.nextElementSibling;
-    var value = parseInt(input.value, 10); 
-    if (value > 1) {
-      value = isNaN(value)? 0 : value;
-      value --;
-      input.value = value;
-    }
-  }
+var noti = document.querySelector('h1');
+var select = document.querySelector('.select');
+var button = document.getElementsByTagName('button');
+for (but of button)
+{
+  but.addEventListener('click', (e)=>{
+    var add = Number(noti.getAttribute('data-count')|| 0);
+    noti.setAttribute('data-count', add +1);
+    noti.classList.add('zero');
+  })
+}
