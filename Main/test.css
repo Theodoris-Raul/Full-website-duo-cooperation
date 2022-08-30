@@ -36,7 +36,7 @@ section {
     height: 400px;
     display: flex;
     justify-content: space-around;
-    margin: 100px auto;
+    margin: 100px 10px;
 }
 
 section div {
@@ -87,9 +87,55 @@ section div span img {
     height: 100%;
 }
 
+section div:nth-child(1)>span.active {
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+
+section div:nth-child(2)>span.active {
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+
+section div:nth-child(3)>span.active {
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+
+@keyframes first {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 1290px;
+        top: -70px;
+    }
+}
+
+@keyframes second {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+@keyframes third {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 606px;
+        top: -70px;
+    }
+}
+
 .select {
     width: 60%;
     height: 580px;
+    padding: 5%;
     background: #222;
     position: absolute;
     top: -1000px;
@@ -97,6 +143,10 @@ section div span img {
     transition: 0.5s;
     overflow-y: auto;
     margin: auto;
+}
+
+.select.display {
+    top: 10px;
 }
 
 .select div {
