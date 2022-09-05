@@ -3,19 +3,19 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [
     {
         name: 'Vera Pure',
-        tag: 'aloebottle1',
+        tag: 'aloe-01',
         price: 5,
         inCart: 0
     },
     {
         name: 'Vera Plus',
-        tag: 'aloebottle2',
+        tag: 'aloe-02',
         price: 5.5,
         inCart: 0
     },
     {
         name: 'Vera Max',
-        tag: 'aloebottle3',
+        tag: 'aloe-03',
         price: 5.8,
         inCart: 0
     },
@@ -88,7 +88,60 @@ function totalCost(product) {
     } else {
         localStorage.setItem('totalCost', product.price);
     }
+}
 
+function displayCart() {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector
+    (".products");
+    let cartCost = localStorage.getItem('totalCost');
+
+    if( cartItems && productContainer ) {
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+            <div class="lineContainer">
+                <div class="product">
+                    <ion-icon name="close-circle"></ion-icon>
+                    <img src="images/${item.tag}.jpg">
+                    <span>${item.name}</span>
+                </div>
+                <div class="price">€${item.price}</div>
+                <div class="quantity">
+                    <ion-icon class="derease"
+                    name="arrow-back-circle-outline"></ion-icon>
+                    <span>${item.inCart}</span>
+                    <ion-icon class="increase" 
+                    name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+                <div class="total">
+                €${item.inCart * item.price}
+                </div>
+            </div>
+            `  
+        });
+
+        productContainer.innerHTML += `
+            <div class="basketTotalContainer">
+                <h4 class="basketTotalTitle">
+                    Basket Total
+                </h4>
+                <h4 class="basketTotal">
+                    €${cartCost}
+                </h4>
+        `;
+
+    }
 }
 
 onLoadCartNumbers();
+displayCart();
+
+/* <span>${item.price}</span>
+<ion-icon class="derease"
+name="arrow-back-circle-outline"></ion-icon>
+<span>${item.inCart}</span>
+<ion-icon class="increase" 
+name="arrow-forward-circle-outline"></ion-icon> 
+*/
