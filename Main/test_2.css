@@ -152,6 +152,20 @@ li a {
     align-items: center;
 }
 
+.quantity input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    background: none;
+    color: #063c0e;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+}
+
 .total {
     width: 10%;
     display: flex;

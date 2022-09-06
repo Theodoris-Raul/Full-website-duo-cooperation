@@ -96,25 +96,35 @@ function displayCart() {
     let productContainer = document.querySelector
     (".products");
     let cartCost = localStorage.getItem('totalCost');
+    //inCart = parseInt(inCart);
+    //console.log(typeof "inCart");
+
+
 
     if( cartItems && productContainer ) {
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="lineContainer">
+
                 <div class="product">
                     <ion-icon name="close-circle"></ion-icon>
                     <img src="images/${item.tag}.jpg">
                     <span>${item.name}</span>
                 </div>
+
                 <div class="price">€${item.price}</div>
+
                 <div class="quantity">
+                    <span class="down" onClick='decreaseCount(event, this)'>
                     <ion-icon class="derease"
-                    name="arrow-back-circle-outline"></ion-icon>
-                    <span>${item.inCart}</span>
+                    name="arrow-back-circle-outline"></ion-icon></span>
+                    <input type="text" value="${item.inCart}">
+                    <span class="up"  onClick='increaseCount(event, this)'>
                     <ion-icon class="increase" 
-                    name="arrow-forward-circle-outline"></ion-icon>
+                    name="arrow-forward-circle-outline"></ion-icon></span>
                 </div>
+
                 <div class="total">
                 €${item.inCart * item.price}
                 </div>
@@ -137,6 +147,7 @@ function displayCart() {
 
 onLoadCartNumbers();
 displayCart();
+
 
 /* <span>${item.price}</span>
 <ion-icon class="derease"
